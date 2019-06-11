@@ -1,0 +1,49 @@
+h1{
+    font-size: 6em;
+    font-weight: 200;
+    line-height: 1em;
+    text-align: center;
+    color: whitesmoke;
+}
+h2{
+    line-height: 1em;
+    text-align: center;
+    color: whitesmoke;
+}
+.icon-button{
+    background-color: transparent;
+    margin: 1em;
+    padding: 0;
+    border: none;
+    color: whitesmoke;
+    font-size: 5em;
+    transition: all .2s ease-in-out;
+}
+.icon-button:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.contact-icons{
+    display: flex;
+    justify-content: space-around;
+    overflow: hidden;
+}
+.welcome{
+    overflow: auto;
+}
+.description{
+    text-align: center;
+}
+.background{
+    padding: 1em;
+}
+.profile-img{
+    float: left;
+    max-width: 20em;
+    height: auto;
+    width: auto;
+    margin-top: 30px;
+    border-radius: 100%;
+    border: 2px solid #111;
+}
