@@ -59,3 +59,21 @@
 .closebtn:hover {
     color: black;
 }	
+
+.branding {
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 3em 0 1em;
+}
+
+.branding:after {
+  content: '';
+  border-right: 1px solid whitesmoke;
+  display: block;
+  height: 80%;
+  width: 50%;
+}
+
+

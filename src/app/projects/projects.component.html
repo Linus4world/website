@@ -1,3 +1,11 @@
-<p>
-  projects works!
-</p>
+<div class="background">
+  <mat-card *ngFor="let p of projects" class="card">
+    <h1>{{p.title}}</h1>
+    <h3>{{p.shortDescription}}</h3>
+    <div *ngFor="let paragraph of p.paragraphs">
+      <strong>{{paragraph.title}}</strong>
+      <p>{{paragraph.text}}</p>
+       <app-image-slider [id] = "p.title + paragraph.title" [images]="paragraph.images" [captions]="paragraph.captions"></app-image-slider>
+    </div>
+  </mat-card>
+</div>

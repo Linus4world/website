@@ -1,0 +1,35 @@
+{
+    "projects": [
+        {
+            "title": "Hank - The Game",
+            "shortDescription": "Creating a complex 2D platformer in Java",
+            "paragraphs" : [
+                {
+                    "title" : "Indroduction",
+                    "text" : "My greatest project so far is 'Hank - The Game'. It is a complex 2D action platformer completely implemented in Java. I worked on this game for several months and since the beginning my vision of this game changed multiple times. I often had to reject ideas or change my way of approach. The overall role model for this game was the classic 'Moorhuhn's Hank'1, which I loved playing in my childhood. Although the size of this project exceeded by far everything I had achieved before, I decided to give it a try. My goal was to come as close to original game as possible, maybe even surpass it in a few areas. I am now going to show you the result of this undertaking.",
+                    "images" : [
+                        "../assets/images/background-home.jpg",
+                        "../assets/images/hank1.png"
+                    ],
+                    "captions": [
+                        "Unwichtig",
+                        "Ingame Screenshot"
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Laboratory: Computer Organization and Computer Architecture",
+            "shortDescription": "Working in a group of 3 on a microprogramming and a vhdl project",
+            "paragraphs" : [
+                {
+                    "title" : "Indroduction",
+                    "text" : "In my second semester in university two friends of mine and I were supposed to work together on a project to improve our practical skills in Assembler, Microprogramming and VHDL. Every teams needed to work on two given tasks for several months and go through the different stages of project development. In this processing period we learned many things about teamwork, different ways to organize an IT project and, of course, new aspects of the already mentioned programming languages. In this section I want to give you an idea of our tasks and how we solved them.",
+                    "images" : [
+                        "../assets/images/background-home.jpg"
+                    ]
+                }
+            ]
+        }
+    ]
+}

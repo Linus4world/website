@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import * as projectsObjects from './../Json/projects.json';
 
 @Component({
   selector: 'app-projects',
@@ -7,10 +8,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProjectsComponent implements OnInit {
 
-  constructor() { }
+  public projects: {
+    title: string,
+    shortDescription: string,
+    paragraphs: {
+      title: string,
+      text: string,
+      images: string[]
+    }
+  };
+
+  constructor() {
+    this.projects = projectsObjects.default.projects;
+  }
 
   ngOnInit() {
     document.getElementById('background-img').className = 'project-page';
+    console.log(this.projects);
   }
 
 }
