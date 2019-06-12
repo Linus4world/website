@@ -20,7 +20,7 @@
       <ng-template matExpansionPanelContent>
         <div *ngFor="let paragraph of p.paragraphs">
           <strong>{{paragraph.title}}</strong>
-          <p>{{paragraph.text}}</p>
+          <p style="white-space:pre-wrap;">{{paragraph.text}}</p>
           <div class="image-slider-container">
             <app-image-slider *ngIf="paragraph.images" [id]="p.title + paragraph.title" [images]="paragraph.images"
               [captions]="paragraph.captions"></app-image-slider>
