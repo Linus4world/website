@@ -6,10 +6,10 @@
 </head>
 <div id="background-img">
   <nav mat-tab-nav-bar>
-    <div class="branding">
+    <a class="branding" href="./home" title="Home">
       <img width="60" src="assets/icons/logo-white.png" style="margin-right: 0.5em">
       <strong>Linus Kreitner</strong>
-    </div>
+    </a>
     <a mat-tab-link *ngFor="let link of navLinks" [routerLink]="link.link" routerLinkActive #rla="routerLinkActive"
       [active]="rla.isActive">{{link.label}}
     </a>

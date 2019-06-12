@@ -35,7 +35,7 @@ export class ImageSliderComponent implements OnInit, AfterViewInit {
 
   public showSlides(n: number) {
     let i: number;
-    const slides = document.getElementsByClassName('mySlides ' + this.id);
+    const slides = document.getElementsByClassName('aspect-ratio-box-inside ' + this.id);
     const dots = document.getElementsByClassName('dot ' + this.id);
     if (n > slides.length) { this.slideIndex = 1; }
     if (n < 1) { this.slideIndex = slides.length; }

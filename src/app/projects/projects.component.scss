@@ -4,9 +4,8 @@
 
 .card{
     width: 80%;
-    margin: auto;
+    margin: 0 auto 2em auto;
 }
-
 
 .image-wrap > img {
     text-align:center;
@@ -17,3 +16,18 @@
     border-radius: 4px;
     border: 2px solid #ff3300;
   }
+
+.header{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center
+}
+
+.header > img{
+    margin-right: 2em;
+    border-radius: 50%;
+}
+
+.runtime{
+    float: right;
+}

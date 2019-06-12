@@ -15,7 +15,12 @@
 
 .project-page{
     background-image: none;
-    background-color: black;
+    background-color: whitesmoke;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    overflow: auto;
 }
 
 #mail-alert{
@@ -66,6 +71,7 @@
     justify-content: space-around;
     align-items: center;
     margin: 0 3em 0 1em;
+    text-decoration: none;
 }
 
 .branding:after {

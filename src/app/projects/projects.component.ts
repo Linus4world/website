@@ -24,7 +24,6 @@ export class ProjectsComponent implements OnInit {
 
   ngOnInit() {
     document.getElementById('background-img').className = 'project-page';
-    console.log(this.projects);
   }
 
 }

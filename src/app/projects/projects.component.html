@@ -1,11 +1,30 @@
 <div class="background">
   <mat-card *ngFor="let p of projects" class="card">
-    <h1>{{p.title}}</h1>
-    <h3>{{p.shortDescription}}</h3>
-    <div *ngFor="let paragraph of p.paragraphs">
-      <strong>{{paragraph.title}}</strong>
-      <p>{{paragraph.text}}</p>
-       <app-image-slider [id] = "p.title + paragraph.title" [images]="paragraph.images" [captions]="paragraph.captions"></app-image-slider>
+    <div class="runtime">{{p.runtime}}</div>
+    <div class="header">
+      <img src="{{p.logo}}" style="max-width: 6em; max-height: 6em; height: auto; width: auto;">
+      <div class="p-titles">
+        <h1>{{p.title}}</h1>
+        <h3>{{p.shortDescription}}</h3>
+      </div>
     </div>
+    <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          Description
+        </mat-panel-title>
+        <mat-panel-description>
+          Click me to {{panelOpenState? 'show less' : 'read more'}}!
+        </mat-panel-description>
+      </mat-expansion-panel-header>
+      <ng-template matExpansionPanelContent>
+        <div *ngFor="let paragraph of p.paragraphs">
+          <strong>{{paragraph.title}}</strong>
+          <p>{{paragraph.text}}</p>
+          <app-image-slider *ngIf="paragraph.images" [id]="p.title + paragraph.title" [images]="paragraph.images"
+            [captions]="paragraph.captions"></app-image-slider>
+        </div>
+      </ng-template>
+    </mat-expansion-panel>
   </mat-card>
 </div>

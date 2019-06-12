@@ -1,10 +1,12 @@
 <!-- Slideshow container -->
-<div class="slideshow-container">
+<div class="aspect-ratio-box">
 
     <!-- Full-width images with number and caption text -->
-    <div class="mySlides {{id}} fade" *ngFor="let image of images; let i=index">
-      <img src="{{image}}" alt="{{image}}" style="width:100%">
+    <div class="aspect-ratio-box-inside {{id}} fade" *ngFor="let image of images; let i=index">
+        <div class="flexbox-centering">
+          <img src="{{image}}" alt="{{image}}">
       <div class="text" *ngIf="captions">{{captions[i]}}</div>
+        </div>
     </div>
   
     <!-- Next and previous buttons -->
@@ -17,3 +19,5 @@
   <div style="text-align:center">
     <span class="dot {{id}}" *ngFor="let _ of images; let i=index" (click)="currentSlide(i+1)"></span> 
   </div>
+
+  
