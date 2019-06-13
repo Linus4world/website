@@ -39,7 +39,7 @@ export class AppComponent implements OnInit {
     });
   }
 
-  public closeAlert(type?) {
-    this.alertService.closeAlert(AlertType.MAIL);
+  public closeAlert(type: AlertType) {
+    this.alertService.closeAlert(type);
   }
 }

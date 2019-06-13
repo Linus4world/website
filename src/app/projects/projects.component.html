@@ -1,6 +1,11 @@
 <div class="background">
   <mat-card *ngFor="let p of projects" class="card">
-    <div class="runtime">{{p.runtime}}</div>
+    <div class="runtime">
+      {{p.runtime}}<br><br>
+      <button mat-raised-button class="download-button" title="Download {{p.download}}" (click)="download(p.download)">
+        <i class="fas fa-download"></i>
+      </button>
+    </div>
     <div class="header">
       <img src="{{p.logo}}" style="max-width: 6em; max-height: 6em; height: auto; width: auto;">
       <div class="p-titles">
@@ -17,6 +22,7 @@
           Click me to {{panelOpenState? 'show less' : 'read more'}}!
         </mat-panel-description>
       </mat-expansion-panel-header>
+      <br>
       <ng-template matExpansionPanelContent>
         <div *ngFor="let paragraph of p.paragraphs">
           <strong>{{paragraph.title}}</strong>
@@ -28,5 +34,6 @@
         </div>
       </ng-template>
     </mat-expansion-panel>
+
   </mat-card>
 </div>

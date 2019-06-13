@@ -30,6 +30,7 @@
 
 .runtime{
     float: right;
+    text-align: center;
 }
 
 .image-slider-container{
@@ -39,4 +40,10 @@
 
 mat-expansion-panel-header{
     background-color: rgb(63, 81, 181) !important;
+}
+
+.download-button{
+    margin: auto;
+    padding: 0.3em;
+    font-size: 1.5em;
 }

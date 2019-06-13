@@ -5,6 +5,7 @@
             "runtime": "04/18 - 07/18",
             "title": "Seminar Data Mining",
             "shortDescription": "Seminar Paper about Data Mining for Online Social Networks",
+            "download": "DataMiningForOnlineSocialNetwork.zip",
             "paragraphs": [
                 {
                     "title": "Indroduction",
@@ -31,6 +32,7 @@
             "runtime": "04/18 - 05/18",
             "title": "Cook Manager",
             "shortDescription": "Desktop tool to organize cooking and baking recipes digitally",
+            "download": "CookManager.zip",
             "paragraphs": [
                 {
                     "title": "Indroduction",
@@ -57,6 +59,7 @@
             "runtime": "03/18 - 04/18",
             "title": "Online Portfolio (1st Aproach)",
             "shortDescription": "Creating an own webserver and website",
+            "download": "kreitner_webserver.zip",
             "paragraphs": [
                 {
                     "title": "Indroduction",
@@ -146,6 +149,7 @@
             "runtime": "01/17 - 09/17",
             "title": "Laboratory: Computer Organization and Computer Architecture",
             "shortDescription": "Working in a group of 3 on a microprogramming and a vhdl project",
+            "download": "MI_VHDL.zip",
             "paragraphs": [
                 {
                     "title": "Indroduction",
@@ -196,6 +200,7 @@
             "runtime": "05/17 - 08/17",
             "title": "Hank - The Game",
             "shortDescription": "Creating a complex 2D platformer in Java",
+            "download": "Release1_1.zip",
             "paragraphs": [
                 {
                     "title": "Indroduction",

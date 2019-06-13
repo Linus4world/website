@@ -13,7 +13,7 @@ import { MatCardModule } from '@angular/material/card';
 import { ImageSliderComponent } from './image-slider/image-slider.component';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
-import { MatIconModule } from '@angular/material/icon';
+import { MatButtonModule } from '@angular/material/button';
 
 @NgModule({
   declarations: [
@@ -32,7 +32,7 @@ import { MatIconModule } from '@angular/material/icon';
     MatCardModule,
     MatExpansionModule,
     MatProgressSpinnerModule,
-    MatIconModule
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
