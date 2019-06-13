@@ -1,6 +1,86 @@
 {
     "projects": [
         {
+            "logo": "../../assets/images/nem.png",
+            "runtime": "04/19 - 05/19",
+            "title": "Debt Tracker",
+            "shortDescription": "Ionic 3 mobile app to keep track of loans using the Nem Blockchain",
+            "download": "Debt-Tracker.zip",
+            "paragraphs": [
+                {
+                    "title": "The Concept",
+                    "text": "DebtTracker is mobile app for android, ios and windows phone which helps you to keep track about loans/debts inside groups. Secure and easy. When ever a group of people share costs like a dinner, a taxi or a trip, it is quite defficult to record precisely how much everybody spent. People easily forget, loose or even manipulate the bills, which they shared. The app is a great way to keep the fairness. It uses the nem blockchain to tackle these problems by doing the following: \n\nSafe storage: The records are safed inside the blockchain. Because of its distributed architecture, the records are 100% safe amd always available. \n\nConfusion: All transactions are transparent and available to every user. This makes it easy to keep track of all actions. \n\nManipulation: The Blockchain makes it impossible to alter accepted transactions. This is because every node in the network has a copy of the ledger. Manipulation is nearly impossible.\n\n All this functionality is packed into a user friendly interface, which makes it very easy to create groups, add friends and record new debts.",
+                    "images": [
+                        "../assets/images/DebtTracker1.png",
+                        "../assets/images/DebtTracker2.png",
+                        "../assets/images/DebtTracker3.png",
+                        "../assets/images/DebtTracker4.png"
+                    ],
+                    "captions": [
+                        "Welcome page after start of the app. Overall balance in all groups is displayed. (android)",
+                        "List of all groups with balance status (android)",
+                        "Group detail page displaying a balance chart for all users and a list of all recent transactions (android)",
+                        "Record a new Debt by selecting the amount and all users that owe you this amount. (ios)"
+                    ]
+                },
+                {
+                    "title": "Implementation",
+                    "text": "This app was developed in the context of the class CS 189 A - SPECIAL TOPICS IN BUSINESS COMPUTING of the Ateneo de Manila University Philippines in cooperation with Nem. The app is build using Ionic 3, Angular 8, Cordova and NodeJS. It furthermore uses the Nem2-sdk for Typescript. The aim of the project was to build a basic structure of an app for a profitable business model that uses features of the nem blockchain. This means that the app is not ready for deployment yet! \nLet me talk about how the features of the app are realised. When the user creates a new group, he has to provide the app with the adresses of the nem account of the other users. The app automatically creates an account for every new user and provides a 'Copy adress' button. Once the group is created, the group details get saved as a .json file locally. A group invitation including the details (such as members and names) are sent to the other users as a transaction in the blockchain. The app querries for new transactions periodically and can therefore detect all new actions. The whole user to user communication, including the records of new loans is done by a ingenious communication system over the blockchain. No mosaics or crypto currencies need to be sent, everything works by using the transaction messages.",
+                    "images": [
+                        "../assets/images/DebtTracker5.png",
+                        "../assets/images/DebtTracker6.png",
+                        "../assets/images/DebtTracker7.png",
+                        "../assets/images/DebtTracker8.png"
+                    ],
+                    "captions": [
+                        "Interface of the messages used for the blockchain communication",
+                        "Functions to create transaction objects which will be sent to other users to share information",
+                        "Function to querry for new transaction, the account is involved in",
+                        "Once a new message is received, this function interpretes it and takes action"
+                    ]
+                },
+                {
+                    "title": "Current Status",
+                    "text": "As I stated before, the app is certainly not ready for deployment yet. To make transactions to other users you have to connect the app to a blockchain (either private or public). For this go into the project folder and open the file src > providers > nem > settings.ts. Here you can set the url of the catapult api node and the network. \nThere are many possible tweaks in the communication system too. Some transactions might need the other users' consent and would require a form of accept ore decline technology for proposed transactions(-> multi signiture transactions). And of course the app needs a thorough test, also on deployment conditions. \nFor now, this project gives a first draft of an app that could be transformed into a profitable business model given some more development, debugging and testing.",
+                    "images": null,
+                    "captions": null
+                }
+            ]
+        },
+        {
+            "logo": "../../assets/images/Task.png",
+            "runtime": "08/18 - 11/18",
+            "title": "Master Task [stopped]",
+            "shortDescription": "Android App helping and motivating you to acomplish your goals",
+            "download": "MasterTask.zip",
+            "paragraphs": [
+                {
+                    "title": "The Concept",
+                    "text": "Master Task is conceived to help the user to keep track of his or her tasks. The app has an integrated scheduler that calculates which of your duties you should be working on next, in order not to miss a deadline or geting caught in stress. To make the scheduler most effective the user can set the importance, the complexity and the deadline type (soft or hard) of the task as well as the deadline date. But humans tend to drop tasks which they think are not that important right now when are stressed. Therefore, I have developed a strategy to motivate the users to actually fulfil the tasks they have set. Every user's progress is represented as a little flying island. When you begin to use the app, the island is pretty much a rocky desert. But as you master your first tasks and improve your life, the island starts to flourish. A water source emerges from the ground and many types of plants and trees start to grow. At least as long as you keep working on your tasks, because if you miss deadlines or stop adding new tasks, the plants will shrink and the water source will dry up.",
+                    "images": ["../assets/images/island.jpg"],
+                    "captions": ["Sketch of the progress island"]
+                },
+                {
+                    "title": "Implementation",
+                    "text": "The island uses a low polygon art style and is implemented in 3D using OpenGL ES for android. The models of app, such as the island, trees, etc. are created with the freeware program Blender and exported as OBJ files. The app is then able to load the vertex positions, normal vectors and texture coordinates and use them. The app requires a minimum android version of Lollipop 5.0, which equals SDK version (API level) 21.",
+                    "images": null,
+                    "captions": null
+                },
+                {
+                    "title": "Current Status",
+                    "text": "I finished my training with the OpenGL functions and I am now able to use shader programs, load 3D models into the GPU and display them in the low polygon art style. I recently began to to build a framework for the app and added an user interface. I learned the basics of switching between fragments and how to save the state of a fragment. If you want so check out the latest version of the development, download the files below.",
+                    "images": [
+                        "../assets/images/preview1.png",
+                        "../assets/images/preview2.png"
+                    ],
+                    "captions": [
+                        "low-polygon style 3D model of a tree rendered by OpenGL",
+                        "First draft of the app menu"
+                    ]
+                }
+            ]
+        },
+        {
             "logo": "../../assets/images/network.png",
             "runtime": "04/18 - 07/18",
             "title": "Seminar Data Mining",
@@ -59,7 +139,7 @@
             "runtime": "03/18 - 04/18",
             "title": "Online Portfolio (1st Aproach)",
             "shortDescription": "Creating an own webserver and website",
-            "download": "kreitner_webserver.zip",
+            "download": "kreitner_website.zip",
             "paragraphs": [
                 {
                     "title": "Indroduction",

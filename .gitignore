@@ -46,4 +46,4 @@ testem.log
 Thumbs.db
 
 #Download Files
-/app/download
+src/assets/download

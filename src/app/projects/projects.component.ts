@@ -33,7 +33,7 @@ export class ProjectsComponent implements OnInit {
     if (url === undefined) {
       this.alertService.activateAlert(AlertType.DOWNLOAD);
     } else {
-      url = '../../download/' + url;
+      url = '../../assets/download/' + url;
       const win = window.open(url, '_blank');
       win.focus();
     }

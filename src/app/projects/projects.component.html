@@ -13,13 +13,13 @@
         <h3>{{p.shortDescription}}</h3>
       </div>
     </div>
-    <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+    <mat-expansion-panel>
       <mat-expansion-panel-header>
         <mat-panel-title>
           Description
         </mat-panel-title>
         <mat-panel-description>
-          Click me to {{panelOpenState? 'show less' : 'read more'}}!
+          Click me to expand / collapse!
         </mat-panel-description>
       </mat-expansion-panel-header>
       <br>
