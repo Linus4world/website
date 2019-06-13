@@ -10,13 +10,13 @@
     </div>
   
     <!-- Next and previous buttons -->
-    <a class="prev" (click)="plusSlides(-1)">&#10094;</a>
-    <a class="next" (click)="plusSlides(1)">&#10095;</a>
+    <a *ngIf="images && images.length > 1" class="prev" (click)="plusSlides(-1)">&#10094;</a>
+    <a *ngIf="images && images.length > 1" class="next" (click)="plusSlides(1)">&#10095;</a>
   </div>
   <br>
   
   <!-- The dots/circles -->
-  <div style="text-align:center">
+  <div *ngIf="images && images.length > 1" style="text-align:center">
     <span class="dot {{id}}" *ngFor="let _ of images; let i=index" (click)="currentSlide(i+1)"></span> 
   </div>
 
