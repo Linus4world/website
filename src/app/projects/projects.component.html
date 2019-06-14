@@ -32,6 +32,12 @@
               [captions]="paragraph.captions"></app-image-slider>
           </div>
         </div>
+        <div class="footnotes">
+          <strong>Useful links:</strong>
+          <ol>
+            <li *ngFor="let note of p.footnotes"><a href="{{note[1]}}" target="_blank">{{note[0]}}</a></li>
+          </ol>
+        </div>
       </ng-template>
     </mat-expansion-panel>
 

@@ -9,7 +9,7 @@
             "paragraphs": [
                 {
                     "title": "The Concept",
-                    "text": "DebtTracker is mobile app for android, ios and windows phone which helps you to keep track about loans/debts inside groups. Secure and easy. When ever a group of people share costs like a dinner, a taxi or a trip, it is quite defficult to record precisely how much everybody spent. People easily forget, loose or even manipulate the bills, which they shared. The app is a great way to keep the fairness. It uses the nem blockchain to tackle these problems by doing the following: \n\nSafe storage: The records are safed inside the blockchain. Because of its distributed architecture, the records are 100% safe amd always available. \n\nConfusion: All transactions are transparent and available to every user. This makes it easy to keep track of all actions. \n\nManipulation: The Blockchain makes it impossible to alter accepted transactions. This is because every node in the network has a copy of the ledger. Manipulation is nearly impossible.\n\n All this functionality is packed into a user friendly interface, which makes it very easy to create groups, add friends and record new debts.",
+                    "text": "DebtTracker is mobile app for android, ios and windows phone which helps you to keep track about loans/debts inside groups. Secure and easy. When ever a group of people share costs like a dinner, a taxi or a trip, it is quite defficult to record precisely how much everybody spent. People easily forget, loose or even manipulate the bills, which they shared. The app is a great way to keep the fairness. It uses the nem blockchain to tackle these problems by doing the following: \n\nSafe storage: The records are saved inside the blockchain. Because of its distributed architecture, the records are 100% safe and always available. \n\nConfusion: All transactions are transparent and available to every user. This makes it easy to keep track of all actions. \n\nManipulation: The Blockchain makes it impossible to alter accepted transactions. This is because every node in the network has a copy of the ledger. Manipulation is nearly impossible.\n\n All this functionality is packed into a user friendly interface, which makes it very easy to create groups, add friends and record new debts.",
                     "images": [
                         "../assets/images/DebtTracker1.png",
                         "../assets/images/DebtTracker2.png",
@@ -41,10 +41,16 @@
                 },
                 {
                     "title": "Current Status",
-                    "text": "As I stated before, the app is certainly not ready for deployment yet. To make transactions to other users you have to connect the app to a blockchain (either private or public). For this go into the project folder and open the file src > providers > nem > settings.ts. Here you can set the url of the catapult api node and the network. \nThere are many possible tweaks in the communication system too. Some transactions might need the other users' consent and would require a form of accept ore decline technology for proposed transactions(-> multi signiture transactions). And of course the app needs a thorough test, also on deployment conditions. \nFor now, this project gives a first draft of an app that could be transformed into a profitable business model given some more development, debugging and testing.",
+                    "text": "As I stated before, the app is certainly not ready for deployment yet. To make transactions to other users you have to connect the app to a blockchain (either private or public). For this, go into the project folder and open the file src > providers > nem > settings.ts. Here you can set the url of the catapult api node and the network. \nThere are many possible tweaks in the communication system too. Some transactions might need the other users' consent and would require a form of accept ore decline technology for proposed transactions(-> multi signiture transactions). And of course the app needs thorough testing, especially on deployment conditions. \nFor now, this project gives a first draft of an app that could be transformed into a profitable business model given some more development, debugging and testing.",
                     "images": null,
                     "captions": null
                 }
+            ],
+            "footnotes": [
+                ["Nem.io", "https://nem.io/"],
+                ["Ateneo de Manila", "https://www.ateneo.edu/"],
+                ["Ionic", "https://ionicframework.com/"],
+                ["Nem2 sdk for Typescript", "https://github.com/nemtech/nem2-sdk-typescript-javascript"]
             ]
         },
         {
@@ -78,6 +84,10 @@
                         "First draft of the app menu"
                     ]
                 }
+            ],
+            "footnotes": [
+                ["OpenGL tuturials by ThinMatrix on Youtube", "https://www.youtube.com/user/ThinMatrix"],
+                ["Blender tutorials for creating 3D models by Blender Guru on Youtube", "https://www.youtube.com/user/AndrewPPrice"]
             ]
         },
         {
@@ -167,6 +177,15 @@
                     "images": null,
                     "captions": null
                 }
+            ],
+            "footnotes": [
+                ["Banana Pi", "https://de.wikipedia.org/wiki/Banana_Pi"],
+                ["Raspbian for Banana Pi", "http://www.lemaker.org/product-bananapi-resource.html"],
+                ["Selfhost.de", "http://www.selfhost.de/"],
+                ["Let's Encrypt", "https://letsencrypt.org/"],
+                ["W3schools.com", "https://www.w3schools.com/"],
+                ["Marcus' video guide", "https://www.youtube.com/watch?v=Dc-2HaN4iKk"],
+                ["Fontawesome.com", "https://fontawesome.com/"]
             ]
         },
         {
@@ -273,6 +292,9 @@
                         "Relation between Output and time (2)"
                     ]
                 }
+            ],
+            "footnotes": [
+                ["Download Jmic", "http://wwwi10.lrr.in.tum.de/~eti/Praktikum/JMic.jar"]
             ]
         },
         {
@@ -338,6 +360,10 @@
                     "images": null,
                     "captions": null
                 }
+            ],
+            "footnotes": [
+                ["Hank der Maulwurf on Amazon", "Hank der Maulwurf on Amazon"],
+                ["Marcus Video Guide", "https://www.youtube.com/watch?v=lDzKX3djE-M"]
             ]
         }
     ]
