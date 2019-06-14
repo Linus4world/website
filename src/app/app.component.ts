@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { AlertService } from './alert.service';
+import { AlertService } from './services/alert.service';
 import { AlertType } from './alert-type.enum';
 import { Router } from '@angular/router';
 
@@ -39,22 +39,7 @@ export class AppComponent implements OnInit {
     });
   }
 
-  // public setCurrentTab(evt) {
-  //   const tablinks = document.getElementsByClassName('nav-link');
-  //   // tslint:disable-next-line:prefer-for-of
-  //   for (let i = 0; i < tablinks.length; i++) {
-  //     tablinks[i].className = tablinks[i].className.replace('active', '');
-  //   }
-  //   if (evt !== null && evt !== undefined) {
-  //     console.log('ups');
-  //     evt.currentTarget.className += ' active';
-  //   } else {
-  //     console.log('aha');
-  //     document.getElementById('home-tab').className += ' active';
-  //   }
-  // }
-
-  private closeAlert() {
-    this.alertService.closeAlert(AlertType.MAIL);
+  public closeAlert(type: AlertType) {
+    this.alertService.closeAlert(type);
   }
 }

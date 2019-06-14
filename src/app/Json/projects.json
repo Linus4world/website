@@ -1,0 +1,370 @@
+{
+    "projects": [
+        {
+            "logo": "../../assets/images/nem.png",
+            "runtime": "04/19 - 05/19",
+            "title": "Debt Tracker",
+            "shortDescription": "Ionic 3 mobile app to keep track of loans using the Nem Blockchain",
+            "download": "Debt-Tracker.zip",
+            "paragraphs": [
+                {
+                    "title": "The Concept",
+                    "text": "DebtTracker is mobile app for android, ios and windows phone which helps you to keep track about loans/debts inside groups. Secure and easy. When ever a group of people share costs like a dinner, a taxi or a trip, it is quite defficult to record precisely how much everybody spent. People easily forget, loose or even manipulate the bills, which they shared. The app is a great way to keep the fairness. It uses the nem blockchain to tackle these problems by doing the following: \n\nSafe storage: The records are saved inside the blockchain. Because of its distributed architecture, the records are 100% safe and always available. \n\nConfusion: All transactions are transparent and available to every user. This makes it easy to keep track of all actions. \n\nManipulation: The Blockchain makes it impossible to alter accepted transactions. This is because every node in the network has a copy of the ledger. Manipulation is nearly impossible.\n\n All this functionality is packed into a user friendly interface, which makes it very easy to create groups, add friends and record new debts.",
+                    "images": [
+                        "../assets/images/DebtTracker1.png",
+                        "../assets/images/DebtTracker2.png",
+                        "../assets/images/DebtTracker3.png",
+                        "../assets/images/DebtTracker4.png"
+                    ],
+                    "captions": [
+                        "Welcome page after start of the app. Overall balance in all groups is displayed. (android)",
+                        "List of all groups with balance status (android)",
+                        "Group detail page displaying a balance chart for all users and a list of all recent transactions (android)",
+                        "Record a new Debt by selecting the amount and all users that owe you this amount. (ios)"
+                    ]
+                },
+                {
+                    "title": "Implementation",
+                    "text": "This app was developed in the context of the class CS 189 A - SPECIAL TOPICS IN BUSINESS COMPUTING of the Ateneo de Manila University Philippines in cooperation with Nem. The app is build using Ionic 3, Angular 8, Cordova and NodeJS. It furthermore uses the Nem2-sdk for Typescript. The aim of the project was to build a basic structure of an app for a profitable business model that uses features of the nem blockchain. This means that the app is not ready for deployment yet! \nLet me talk about how the features of the app are realised. When the user creates a new group, he has to provide the app with the adresses of the nem account of the other users. The app automatically creates an account for every new user and provides a 'Copy adress' button. Once the group is created, the group details get saved as a .json file locally. A group invitation including the details (such as members and names) are sent to the other users as a transaction in the blockchain. The app querries for new transactions periodically and can therefore detect all new actions. The whole user to user communication, including the records of new loans is done by a ingenious communication system over the blockchain. No mosaics or crypto currencies need to be sent, everything works by using the transaction messages.",
+                    "images": [
+                        "../assets/images/DebtTracker5.png",
+                        "../assets/images/DebtTracker6.png",
+                        "../assets/images/DebtTracker7.png",
+                        "../assets/images/DebtTracker8.png"
+                    ],
+                    "captions": [
+                        "Interface of the messages used for the blockchain communication",
+                        "Functions to create transaction objects which will be sent to other users to share information",
+                        "Function to querry for new transaction, the account is involved in",
+                        "Once a new message is received, this function interpretes it and takes action"
+                    ]
+                },
+                {
+                    "title": "Current Status",
+                    "text": "As I stated before, the app is certainly not ready for deployment yet. To make transactions to other users you have to connect the app to a blockchain (either private or public). For this, go into the project folder and open the file src > providers > nem > settings.ts. Here you can set the url of the catapult api node and the network. \nThere are many possible tweaks in the communication system too. Some transactions might need the other users' consent and would require a form of accept ore decline technology for proposed transactions(-> multi signiture transactions). And of course the app needs thorough testing, especially on deployment conditions. \nFor now, this project gives a first draft of an app that could be transformed into a profitable business model given some more development, debugging and testing.",
+                    "images": null,
+                    "captions": null
+                }
+            ],
+            "footnotes": [
+                ["Nem.io", "https://nem.io/"],
+                ["Ateneo de Manila", "https://www.ateneo.edu/"],
+                ["Ionic", "https://ionicframework.com/"],
+                ["Nem2 sdk for Typescript", "https://github.com/nemtech/nem2-sdk-typescript-javascript"]
+            ]
+        },
+        {
+            "logo": "../../assets/images/Task.png",
+            "runtime": "08/18 - 11/18",
+            "title": "Master Task [stopped]",
+            "shortDescription": "Android App helping and motivating you to acomplish your goals",
+            "download": "MasterTask.zip",
+            "paragraphs": [
+                {
+                    "title": "The Concept",
+                    "text": "Master Task is conceived to help the user to keep track of his or her tasks. The app has an integrated scheduler that calculates which of your duties you should be working on next, in order not to miss a deadline or geting caught in stress. To make the scheduler most effective the user can set the importance, the complexity and the deadline type (soft or hard) of the task as well as the deadline date. But humans tend to drop tasks which they think are not that important right now when are stressed. Therefore, I have developed a strategy to motivate the users to actually fulfil the tasks they have set. Every user's progress is represented as a little flying island. When you begin to use the app, the island is pretty much a rocky desert. But as you master your first tasks and improve your life, the island starts to flourish. A water source emerges from the ground and many types of plants and trees start to grow. At least as long as you keep working on your tasks, because if you miss deadlines or stop adding new tasks, the plants will shrink and the water source will dry up.",
+                    "images": ["../assets/images/island.jpg"],
+                    "captions": ["Sketch of the progress island"]
+                },
+                {
+                    "title": "Implementation",
+                    "text": "The island uses a low polygon art style and is implemented in 3D using OpenGL ES for android. The models of app, such as the island, trees, etc. are created with the freeware program Blender and exported as OBJ files. The app is then able to load the vertex positions, normal vectors and texture coordinates and use them. The app requires a minimum android version of Lollipop 5.0, which equals SDK version (API level) 21.",
+                    "images": null,
+                    "captions": null
+                },
+                {
+                    "title": "Current Status",
+                    "text": "I finished my training with the OpenGL functions and I am now able to use shader programs, load 3D models into the GPU and display them in the low polygon art style. I recently began to to build a framework for the app and added an user interface. I learned the basics of switching between fragments and how to save the state of a fragment. If you want so check out the latest version of the development, download the files below.",
+                    "images": [
+                        "../assets/images/preview1.png",
+                        "../assets/images/preview2.png"
+                    ],
+                    "captions": [
+                        "low-polygon style 3D model of a tree rendered by OpenGL",
+                        "First draft of the app menu"
+                    ]
+                }
+            ],
+            "footnotes": [
+                ["OpenGL tuturials by ThinMatrix on Youtube", "https://www.youtube.com/user/ThinMatrix"],
+                ["Blender tutorials for creating 3D models by Blender Guru on Youtube", "https://www.youtube.com/user/AndrewPPrice"]
+            ]
+        },
+        {
+            "logo": "../../assets/images/network.png",
+            "runtime": "04/18 - 07/18",
+            "title": "Seminar Data Mining",
+            "shortDescription": "Seminar Paper about Data Mining for Online Social Networks",
+            "download": "DataMiningForOnlineSocialNetwork.zip",
+            "paragraphs": [
+                {
+                    "title": "Indroduction",
+                    "text": "In the fourth semester of university one has to choose a seminar subject to write a paper about. My choice fell upon the data mining seminar, which not only had fascinating topics to offer, but also a professional team and a well-structured organisation. My tutors assigned to me the topic 'Data Mining for Social Networks', but since this is a very broad field I quickly decided to focus on Online Social Networks (OSN) due to their relevance in today's life.",
+                    "images": null,
+                    "captions": null
+                },
+                {
+                    "title": "The Paper",
+                    "text": "In the paper, I outline the state of art in data mining for big Online Social Networks such as Twitter and Facebook. The survey covers the basics of graph mining and presents several network properties for OSNs. In the first part all the necessary technical terms are explained, such as cluster coefficient, centrality and betweenes. Subsequently, I take a look at multiple algorithms addressing standard problems in network analysis such as community detection and information spreading. Therefore, I considered modern algorithms, for instance Muric et al.'s method to identify a network's most influential nodes by treating the graph as an LTI system and other, more classic algorithms like Girvan and Newman's community detection strategy. Finally, I discussed several application areas like event detection and sentiment analysis where data mining shows promising results. Writing this paper really was a challenge for me due to the complexity of the topic. There are hundreds to thousands of research papers addressing all kinds of subtopics in this field. In my research I looked upon round about 70 academic writings and included 25 of them directly in my work. It was quite fascinating to read about all these different ideas and algorithms scientists invented to use OSN for seemingly unconnected fields. Although, if have to say that some algorithms took me days to completely understand them, as there are often not described precisely enough, or they refer to definitions assumed to be known. I think this was the course I learned most this semester and by the way, I also practised my English writing too",
+                    "images": ["../assets/images/paper.png"],
+                    "captions": ["Abstract from the paper"]
+                },
+                {
+                    "title": "Implementation",
+                    "text": "When I presented my work in front of the other course participants I boosted my presentation by adding a little live demo of Newman and Girvan's community detection algorithm. The program can detect a community within a given social network graph and returns the found groups. This algorithm was never released officially in Java and only a few parts were published in Python, so I tried to convert the algorithm from text form into program code. I came up with a quick and dirty implementation in less a day, hence the program does not perfectly work in all cases nor is it documented very well. However, it worked fine for me on most of my tests and did a great job in my presentation. \nIf you are interested in the paper or the source code of the implemented algorithm, you can download a copy down below. Please note that because I do not have all the licences for the pictures used in the paper, the work must not be made public without asking.",
+                    "images": ["../assets/images/community.png"],
+                    "captions": ["Output of the community detection program. Nodes inside a communities have the same color"]
+                }
+            ]
+        },
+        {
+            "logo": "../../assets/images/cookIcon.png",
+            "runtime": "04/18 - 05/18",
+            "title": "Cook Manager",
+            "shortDescription": "Desktop tool to organize cooking and baking recipes digitally",
+            "download": "CookManager.zip",
+            "paragraphs": [
+                {
+                    "title": "Indroduction",
+                    "text": "At the beginning of my fourth semester an acquaintances of mine asked me to help her with creating a little desktop app. She imagined a program wich would help her to organize her cooking recipes more easily since the number of formulas had surpassed the mark where they could be managed in an paper written form. She gave me a presice draft of the layout all recipes should have and what requirements she had for the program. This was my first experience with building an app for another person and since I only had a limited amount of time to work on this project I needed to clearly identify what I could build in this time and what functions my program should provide in the end. This is what I came up with:",
+                    "images": ["../assets/images/cookPreview.png"],
+                    "captions": ["Interface of the CookManager"]
+                },
+                {
+                    "title": "The program",
+                    "text": "The Cook Manager provides a search structure that differs between the two recipe types 'cooking' and 'baking'. You can search for a specific recipe by typing in the name and you can sort the results by either date or name. This makes the searching much easier than looking it up by hand. Each recipe has a consistent layout, containing a name, an image, a type, the ingeredients and the preperation. New recipes can be added easily and existing ones can be changed or deleted.",
+                    "images": ["../assets/images/recipeLayout.png"],
+                    "captions": ["Detail page of a selected Recipe"]
+                },
+                {
+                    "title": "The implementation process",
+                    "text": "For the app I once again reused many of my old GUI elements of 'Hank the Game' and enhanced on the one hand side their functionality and on the other the independence of the framework program to prepare it for future work. \nIn the end, my friend was quite pleased with the outcome. For further development one could work on the design of the app, since I was not able to focus on a nice appearance due to time constraints. If you want to test the app for yourself, feel free to use the download link below, which will give you the executable program, the necessary resource files and the code files.",
+                    "images": null,
+                    "captions": null
+                }
+            ]
+        },
+        {
+            "logo": "../../assets/images/website.png",
+            "runtime": "03/18 - 04/18",
+            "title": "Online Portfolio (1st Aproach)",
+            "shortDescription": "Creating an own webserver and website",
+            "download": "kreitner_website.zip",
+            "paragraphs": [
+                {
+                    "title": "Indroduction",
+                    "text": "Semester breaks always are the best times to go for new projects. After my third semester I decided that I wanted to learn more about creating a website. I also figured that it may be nice to have an own portfolio, which can be given to some companies, since the standard application documents do not provide enough space to get to know a person. An online Portfolio is an ideal place to showcase projects, give others an idea of what a person is about and also to leave information on how to contact that person.",
+                    "images": ["../assets/images/web1.png"],
+                    "captions": ["Interface of the CookManager"]
+                },
+                {
+                    "title": "Realisation",
+                    "text": "While planning my own website I also decided that I wanted the freedom to host my own webserver and to not depend on other companies. So, I picked a Banana Pi which I already used for some minor projects before, downloaded Raspbian and set up an Apache2 webserver. \nAfter this was done I needed a dynamic DNS service to provide a constant address for my server. I chose Selfhost.de, since they provide a free address without time limit. Now my webserver is reachable under the domain 'kreitner.selfhost.eu'. Because I also wanted HTTPS encryption to show more professionalism, I did some research on how to achieve this for free, as well. I stumbled upon an article over a service, namly 'Let’s Encrypt' that provides HTTPS encryption for free. So, I downloaded the necassary files from certbot.eff.com to receive a wildcard certificate. I also programmed a cron to automaticly renew the certificate after 90 days and set up a constant redirect to the secure port. \nAt this point I concentrated on actually creating the website. I familiarised myself with HTML and CSS. A big help was the website 'w3schools.com', which provides many explanations on any questions regarding html and css. For my first draft of the webpage I once again used a video guide from Marcus Dubreuil on how to create an easy online portfolio. When you look in the code files you will in fact still find a few elements he used in his video. \nOf course, this first draft was not enough for me and I continued to work on the design and functionality. Another big help was the website 'fontawesome.com', providing an easy use of icons for a website. I also used some JavaScript to enable a few more advanced functions, like the 'show more button'.",
+                    "images": [
+                        "../assets/images/web2.jpg",
+                        "../assets/images/web3.png",
+                        "../assets/images/web4.png"
+                    ],
+                    "captions": [
+                        "Banana Pi",
+                        "Marcus Dubreuil's website",
+                        "Abstract of the index.html"
+                    ]
+                },
+                {
+                    "title": "Wrap up",
+                    "text": "During the creation, I learned many things about front end development and a little about back end. I am now finally able to accept website design orders from my neighbours and have a much better understanding on how modern websites work. This actually got me thinking why so many companies still do offer an unpleasant website, despite the fact that the appearance of a webpage has a considerable strong effect on the customer. However, this website is not finished and gets constantly extended and improved. If you want to get the latest resource files for yourself, download the package down below.",
+                    "images": null,
+                    "captions": null
+                }
+            ],
+            "footnotes": [
+                ["Banana Pi", "https://de.wikipedia.org/wiki/Banana_Pi"],
+                ["Raspbian for Banana Pi", "http://www.lemaker.org/product-bananapi-resource.html"],
+                ["Selfhost.de", "http://www.selfhost.de/"],
+                ["Let's Encrypt", "https://letsencrypt.org/"],
+                ["W3schools.com", "https://www.w3schools.com/"],
+                ["Marcus' video guide", "https://www.youtube.com/watch?v=Dc-2HaN4iKk"],
+                ["Fontawesome.com", "https://fontawesome.com/"]
+            ]
+        },
+        {
+            "logo": "../../assets/images/database.png",
+            "runtime": "10/17 - 03/18",
+            "title": "Student Assistant at the Chair of Databases",
+            "shortDescription": "Helping students to better understand the content of the lecture",
+            "paragraphs": [
+                {
+                    "title": "Indroduction",
+                    "text": "During my third semester I worked as a Student Assistant at the chair of databases for the TUM School of education. My main task was to help students to better understand the content of the lecture 'Fundamentals of Databases', a lecture which I had taken one year before. I worked with two groups, each with about 20 people once per week. The chair provided a weekly worksheet and it then was my obligatory to: \ni) Teach them the necessary study matter \nii) Show them how to solve the exercises \niii) Evaluate their answers \n\n For this purpose, I was allowed to use my own teaching styles and design own lessons. Let me show you how I decided to structure my lessons:",
+                    "images": null,
+                    "captions": null
+                },
+                {
+                    "title": "1. The Welcome",
+                    "text": "The lesson starts with a warm 'Welcome to today's class!' followed by a quick outline of the plan for this day. I also take an exact look on how the mood of student is in order to adjust my presentation. If there are any organisational points to discuss I mostly address them right at the beginning of the lesson.",
+                    "images": null,
+                    "captions": null
+                },
+                {
+                    "title": "2. The Repetition",
+                    "text": "This may be the most important part of class. I give a short repetition of the essential points presented in the lecture in the previous week to bring all students up to speed. This is also the most demanding task on my list as tutor, since I have to find a way to as quickly explain the content as possible while also make it as simple as possible. To achieve this, I use a fine prepared PowerPoint slides with many graphics and an refreshing type of presentation. I also add a few jokes here and there to make them stay awake and motivated. This part takes about 10 to 15 minutes and after that the students should be able to follow the lesson with ease. The repetition usually ends with some time for questions and a funny picture to gain all the attention which may have been lost during the way.",
+                    "images": [
+                        "../assets/images/tutor1.png",
+                        "../assets/images/tutor2.png"
+                    ],
+                    "captions": [
+                        "Typical Repetition slide",
+                        "Funny Picture to wake up everybody"
+                    ]
+                },
+                {
+                    "title": "3. The Exercises",
+                    "text": "This part consumes about 80% of the lesson and can be considered as the main part. Students were supposed to work on these exercises at home and then be able to present their solution in class. Because I wanted to avoid the pressure known from school when you are forced to present your assignment, I completely handled this on volunteer basis. If a student wants to show his solution he can answer my request. During his presentation I evaluate his work and if necessary give some improvements. If the work was satisfying the student earns 1 point. 2 points are needed to gain an extra bonus in the final exam. If the student does not attend class, he loses 1 point. This part may sound simple, but it is quite challenging to evaluate a student's work, for example SQL code, in only a few seconds.\n To be as much supportive as possible it is critical for me to provide a sound feedback for the presenting student. He / She needs to understand exactly where the problems are and how to avoid them. It also very important to explain the solution to all the other class members, even those who did not do their homework and thus are not familiarised with the exercise.",
+                    "images": [
+                        "../assets/images/tutor3.png",
+                        "../assets/images/tutor4.png"
+                    ],
+                    "captions": [
+                        "Slide to better explain the solution",
+                        "Solution of a task"
+                    ]
+                },
+                {
+                    "title": "4. The Wrap Up",
+                    "text": "In the last few minutes of the lessons I give a brief Wrap up with the key aspects of the lessons. This shows all students which parts are essential to know and also gives them a final chance to check if they really understand what this topic is about. If some things are still unclear to answer, they are encouraged to asks questions. \nIf you want to know how a lesson would look like in reality or how my presentation evolved during the time, you can download the slides down below.",
+                    "images": [
+                        "../assets/images/tutor5.png",
+                        "../assets/images/tutor6.png"
+                    ],
+                    "captions": [
+                        "Wrap Up Slide to sum up the most important points from this lecture"
+                    ]
+                }
+            ]
+        },
+        {
+            "logo": "../../assets/images/MI.jpg",
+            "runtime": "01/17 - 09/17",
+            "title": "Laboratory: Computer Organization and Computer Architecture",
+            "shortDescription": "Working in a group of 3 on a microprogramming and a vhdl project",
+            "download": "MI_VHDL.zip",
+            "paragraphs": [
+                {
+                    "title": "Indroduction",
+                    "text": "In my second semester in university two friends of mine and I were supposed to work together on a project to improve our practical skills in Assembler, Microprogramming and VHDL. Every teams needed to work on two given tasks for several months and go through the different stages of project development. In this processing period we learned many things about teamwork, different ways to organize an IT project and, of course, new aspects of the already mentioned programming languages. In this section I want to give you an idea of our tasks and how we solved them.",
+                    "images": [
+                        "../assets/images/ERA1.png",
+                        "../assets/images/ERA2.png",
+                        "../assets/images/ERA6.png"
+                    ],
+                    "captions": [
+                        "Project 1: Task",
+                        "Project 1: Description for one of the commands",
+                        "Project 2: Task"
+                    ]
+                },
+                {
+                    "title": "Project 1: Microprogramming",
+                    "text": "In short, we needed to realise the given machine instructions of a classic x86 processor from Intel. These instructions should then be used to create a machine program to calculate the parity (number of bits equal to 1) of a 16 bit word. Furthermore, it is very important that the program needs as little as possible amount of cycles. For each of these instructions we were given a description. \nTo implement / test our code we used the java program JMic1, created by the TUM. This program provides a visual surface to set the bits for each cycle and to observe the current state of the machine. \nFinally, we added our parity program to the main memory and created some tests to show the functionality of our implementation. The basic idea behind our solution was to rotate the word 16 times analysing every one bit per step. The rr command moves the pushed bit into the carry, enabling us to separate the bit. We then used the Add carry (addc RA, RB) command to increase the parity counter with the value of the carry flag. After 16 steps the counter equals the amount of 1 bits in the word. For a visualisation of this principle take a look the image below, taken from the final project presentation. Note that for our implementation we were only allowed to use the given commands, no others.",
+                    "images": [
+                        "../assets/images/ERA3.png",
+                        "../assets/images/ERA4.png",
+                        "../assets/images/ERA5.png"
+                    ],
+                    "captions": [
+                        "Jmic interface",
+                        "Implementation of Rotate Right command (rr imm, RB)",
+                        "Operation of the parity program"
+                    ]
+                },
+                {
+                    "title": "Project 2: VHDL",
+                    "text": "Our second task was all about creating a so called 'day time clock', counting from 0 to 23. We were given a schema to encode the times of day using 5 Bits (B0-B4). We then were supposed to multiplex the bits of counter B to the 8 bits of output D, with the constraint of only activating one bit of D at a time. \n When analysing the coding, the following formula for getting the time of day from counter B can be derived: \n\ntime = 12*B(4) + 6*B(3) + 3*(B2) + 2*B(1) +B(0) \n\nFor getting the time using the output bits one could also the technique depicted in the image gallery. \nThe module was completely programmed in VHDL, but we also used the additional programs GDHL for compiling, GTKWave for visualisation and GNU Make for running a makefile under Windows. For more information and the implementation download the documentation file. ",
+                    "images": [
+                        "../assets/images/ERA7.png",
+                        "../assets/images/ERA8.png",
+                        "../assets/images/ERA9.png"
+                    ],
+                    "captions": [
+                        "Sketch of the modules",
+                        "Relation between Output and time (1)",
+                        "Relation between Output and time (2)"
+                    ]
+                }
+            ],
+            "footnotes": [
+                ["Download Jmic", "http://wwwi10.lrr.in.tum.de/~eti/Praktikum/JMic.jar"]
+            ]
+        },
+        {
+            "logo": "../../assets/images/hank_vorschau.png",
+            "runtime": "05/17 - 08/17",
+            "title": "Hank - The Game",
+            "shortDescription": "Creating a complex 2D platformer in Java",
+            "download": "Release1_1.zip",
+            "paragraphs": [
+                {
+                    "title": "Indroduction",
+                    "text": "My greatest project so far is 'Hank - The Game'. It is a complex 2D action platformer completely implemented in Java. I worked on this game for several months and since the beginning my vision of this game changed multiple times. I often had to reject ideas or change my way of approach. The overall role model for this game was the classic 'Moorhuhn's Hank'1, which I loved playing in my childhood. Although the size of this project exceeded by far everything I had achieved before, I decided to give it a try. My goal was to come as close to original game as possible, maybe even surpass it in a few areas. I am now going to show you the result of this undertaking.",
+                    "images": [
+                        "../assets/images/hank1.png"
+                    ],
+                    "captions": [
+                        "Ingame Screenshot"
+                    ]
+                },
+                {
+                    "title": "Outline",
+                    "text": "Let me start with a quick description of the game. You play a miner looking for treasure in the underground who wants to unveil the secrets of the depth. The goal in every level is to find 3 keys which will open the doors to the next stage. Because you are a miner, you are able to dig tunnels through soil blocks, eventually finding coins or diamonds in the dirt. While searching for the hidden keys you should collect as many treasures as possible since they will increase the score you receive at completion of the level. But be aware of the monsters protecting their territory! They will attack you and immediately kill you in melee combat. Therefore, you are carrying a gun to protect yourself from these creatures. In the following I will showcase the monsters you will meet in the game:",
+                    "images": null,
+                    "captions": null
+                },
+                {
+                    "title": "NPCs",
+                    "text": "The game features 4 different NPC types, three of them hostile. \nThe Crawler is the most widespread creature in the tunnels. Most of the time he wanders around randomly, but when you come to close he is very likely to attack.\n A rather stronger enemy is the Dragon. Not only does he kill everything on direct contact, but also shoots fireballs from time to time turning every living creature into ash. It is even nearly impossible to kill a Dragon. Their skin protects them from bullets and other monsters. Fortunately, Dragons are quite easy to handle with when let alone, since they are not interested in fresh player meat.\n Not every living thing in the game wants to eat you alive. Although looking quite scaring, the miners actually help you to reach places you normally could not enter by removing stone blocks.\n Last but not least: The Spider. The most dangerous beast you could possibly be facing. Just like the Dragon, nearly impossible to kill, but unlike the dragon very hungry. A spider can sense a player's position over the whole map and will hunt you. Moreover, the Spider is much faster than all other creatures, decreasing your chances to simply outrun them.\n The game also provides a big variety of different items which can help you to defeat the hostiles or can damage you. Each item has an unique effect which makes the gameplay more interesting.",
+                    "images": [
+                        "../assets/images/hank2.png",
+                        "../assets/images/hank3.png",
+                        "../assets/images/hank4.png",
+                        "../assets/images/hank5.png",
+                        "../assets/images/hank6.png"
+                    ],
+                    "captions": [
+                        "The Crawler",
+                        "The Dragon",
+                        "The Miner (sprite sheet)",
+                        "The Spider",
+                        "Items and Mobs"
+                    ]
+                },
+                {
+                    "title": "Technology",
+                    "text": "A big chapter of the development was all about technology and game engine. When I realized that such a big game needs a proper engine to run smoothly, I familiarised myself with the principles of building video games following the instructions of Marcul Dubreuil in his video guide2 for building java games. I learned how make animations and movement for models and discovered a few tricks on how to optimize the graphics. When I began to understand the concepts, I started to build my own engine and adjust it to my needs. \nNearly every item, block or mob in the game was designed by hand using GIMP2. I also implemented an 'entity factory' and an editor mode for the game in order to create new items/mobs and new levels much faster. To improve the pixel look I added particle animations to the game to show different effects on entities. The same technology was then later used to realize fireballs and bullets. \nI not only used physical effects for a better appearance but also to change the gameplay by adding gravity to some objects. Stones do not move until to the point when there is no other block or mob blocking their way down. Then they fall downwards, killing every mob on it's way, in fact, even dragons and spiders, until they hit another block. This adds new options on how players can interact with their environment. \nThe ambient sound of a game is a key factor which should not be underestimated. Therefore, I experimented with sound sources, effect sounds, sound spreading and background music. This was a quite frustrating part of development, since I find it considerable challenging to choose the right tracks for a given situation. But with a little bit of practice I was pretty satisfied with the result. ",
+                    "images": [
+                        "../assets/images/hank7.png",
+                        "../assets/images/hank8.png",
+                        "../assets/images/hank9.png",
+                        "../assets/images/hank10.png"
+                    ],
+                    "captions": [
+                        "The Speed Effect",
+                        "The Shield Effect",
+                        "The Stone cannot fall down while player is directly below",
+                        "Once the field below is clear the stone falls down killing every mob including players in its way"
+                    ]
+                },
+                {
+                    "title": "Final Words",
+                    "text": "Hank The Game definitely is my most favourite project, since I learned so much about project management, game (engine) design, animations, sound design and Java programming during the development. I now do better understand how much work is involved in larger projects and have great respect for every one-man-developer. It was hard work but in the end, I was able to improve my skills remarkable. \nIf you now want to try the game by yourself, simply use the download link below and follow the instructions. Have fun! ",
+                    "images": null,
+                    "captions": null
+                }
+            ],
+            "footnotes": [
+                ["Hank der Maulwurf on Amazon", "Hank der Maulwurf on Amazon"],
+                ["Marcus Video Guide", "https://www.youtube.com/watch?v=lDzKX3djE-M"]
+            ]
+        }
+    ]
+}
