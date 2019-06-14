@@ -1,3 +1,355 @@
-<p>
-  cv works!
-</p>
+<mat-card class="CV-card">
+  <div class="cv-header">
+    <button mat-raised-button class="download-button" title="Download CV" (click)="download()">
+      <i class="fas fa-download"></i>
+    </button>
+    <h1>CURRICULUM VITAE</h1>
+    <img src="../../assets/images/bewerbung.jpg" alt="bewerbung.jpg" class="cv-img">
+  </div>
+  <br>
+
+
+  <mat-accordion>
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          Education
+        </mat-panel-title>
+      </mat-expansion-panel-header>
+      <br>
+      <div class="projectTable">
+        <div class="project">
+          <div class="runTime CV">
+            <p> 01.2019 - 06.2019 </p>
+          </div>
+          <div class="projectDiscription CV">
+            <p>
+              <strong>Ateneo De Manila University, Philippines </strong><br />
+              <i>Semester Abroad</i>
+            </p>
+          </div>
+        </div>
+
+        <div class="project">
+          <div class="runTime CV">
+            <p> Since 2016 </p>
+          </div>
+          <div class="projectDiscription CV">
+            <p>
+              <strong>Technical University of Munich (TUM) </strong><br />
+              <i>Bachelor of Science Informatics, Specialization: Electrical Engineering</i>
+            </p>
+          </div>
+        </div>
+
+        <div class="project">
+          <div class="runTime CV">
+            <p> 2008 - 2016 </p>
+          </div>
+          <div class="projectDiscription CV">
+            <p>
+              <strong>Ignaz-Kögler-Gymnasium Landsberg am Lech (IKG), Germany </strong><br />
+              <i> Abitur</i>
+            </p>
+          </div>
+        </div>
+
+        <div class="project">
+          <div class="runTime CV">
+            <p> 2004 - 2008 </p>
+          </div>
+          <div class="projectDiscription CV">
+            <p> <strong>Grundschule Windach (Elementary School), Germany</strong></p>
+          </div>
+        </div>
+      </div>
+    </mat-expansion-panel>
+
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        <mat-panel-title style="align-items: center">
+          Academic Success
+        </mat-panel-title>
+        <mat-panel-description>
+          <button mat-raised-button title="Download Academic Success"
+            (click)="download()">
+            <i class="fas fa-download"></i>
+          </button>
+        </mat-panel-description>
+      </mat-expansion-panel-header>
+      <br>
+
+      <div class="projectTable">
+        <div class="project">
+          <div class="runTime" style="width: 70%;">
+            <p> Current Total Credits:</p>
+          </div>
+          <div class="projectDiscription" style="width: 30%">
+            <p>
+              126 / 180
+            </p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="projectTable">
+        <div class="project">
+          <div class="runTime">
+            <p> Required Modules Informatics</p>
+          </div>
+          <div class="projectDiscription" style="text-align:left">
+            <ul>
+              <li>Introduction to Informatics 1 </li>
+              <li>Fundamentals of Programming (Exercises & Laboratory)</li>
+              <li>Introduction to Computer Organization and Technology - Computer Architecture</li>
+              <li>Fundamentals of Algorithms and Data Structures</li>
+              <li>Introduction to Software Engineering </li>
+              <li>Fundamentals of Databases </li>
+              <li>Basic Principles: Operating Systems and System Software </li>
+              <li>Introduction to Computer Networking and Distributed Systems</li>
+              <li>Introduction to Theory of Computation</li>
+              <li>Laboratory: Computer Organization and Computer Architecture </li>
+              <li>Introduction to Informatics 2</li>
+              <li>Advanced Seminar Course: Seminar Data Mining</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="project">
+          <div class="runTime">
+            <p> Required Modules Mathematics</p>
+          </div>
+          <div class="projectDiscription" style="text-align:left">
+            <ul>
+              <li>Discrete Structures </li>
+              <li>Linear Algebra for Informatics </li>
+              <li>Analysis for Informatics </li>
+              <li>Discrete Probability Theory</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="project">
+          <div class="runTime">
+            <p> Required Modules Electrical Engineering</p>
+          </div>
+          <div class="projectDiscription" style="text-align:left">
+            <ul>
+              <li>Signal Representation </li>
+              <li>Introduction to Signal Processing for IN </li>
+              <li>Electrical Measuring Technology for Computer Scientists </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="project">
+          <div class="runTime">
+            <p> Support Electives</p>
+          </div>
+          <div class="projectDiscription" style="text-align:left">
+            <ul>
+              <li>Intensive Course English - English for Academic Purposes <br /> Module: Gateway to English Master's C1
+              </li>
+              <li>Pedagogical Training in Didactics for Tutors </li>
+              <li>SET-Tutor</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </mat-expansion-panel>
+
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        <mat-panel-title style="align-items: center">
+          Work experience and projects
+        </mat-panel-title>
+      </mat-expansion-panel-header>
+      <br>
+      <div class="projectTable">
+        <div class="project">
+          <div class="runTime CV">
+            <p>Since 11/2018</p>
+          </div>
+
+          <div class="projectDiscription CV">
+            <p>
+              <strong>Working Student at Siemens AG: Building Technologies</strong><br>
+              <i>Development of an Ionic 3 mobile app</i>
+            </p>
+            <ul>
+              <li>Contribute as a developer to a large project</li>
+              <li>Work in a scrum team of experienced co-workers</li>
+              <li>Add new features, solve bugs and conduct performance tests</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="project">
+          <div class="runTime CV">
+            <p> 10/2017 – 03/2018</p>
+          </div>
+          <div class="projectDiscription CV">
+            <p>
+              <strong>Student Assistant at the TUM School of Education at the chair of databases</strong><br />
+              <i>Helping students to better understand the content of the lecture</i>
+            </p>
+            <ul>
+              <li>Qualified by Pedagogical Training in Didactics for Tutors</li>
+              <li>Design one lesson per week for two groups of 20 students</li>
+              <li>Work with students on exercises with self-designed teaching methods</li>
+              <li>Answer students’ questions and improve their abilities</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="project">
+          <div class="runTime CV">
+            <p> 10/2017 – 10/2017</p>
+          </div>
+          <div class="projectDiscription CV">
+            <p>
+              <strong>Member of the SET-Team at the TUM Fachschaft Mathematics/Physics/Informatics</strong><br />
+              <i>Help students with their start at university</i>
+            </p>
+            <ul>
+              <li>Organize Welcome-events for new students</li>
+              <li>Guide a campus tour</li>
+              <li>Encourage contact between international and local students</li>
+              <li>Answer questions about the everyday life at university</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="project">
+          <div class="runTime CV">
+            <p> 10/2014 – 06/2015</p>
+          </div>
+          <div class="projectDiscription CV">
+            <p>
+              <strong>Qualitraining – Schüler helfen Schülern at Mittelschule Landsberg, Germany</strong><br />
+              (English: Quali training courses – students helping students):<br />
+              <i>Students teach other students in Mathematics, English and German to help them pass their graduation
+                exams</i>
+            </p>
+            <ul>
+              <li>Conception and content design of the Quali-exercise</li>
+              <li>Euccessful discussions with the principal and the school's teachers</li>
+              <li>Regular conduct of the training courses</li>
+              <li>Documentation and evaluation of the project</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="project">
+          <div class="runTime CV">
+            <p> 11/2014 – 01/2016</p>
+          </div>
+          <div class="projectDiscription CV">
+            <p>
+              <strong>Shop assistant at Schlossmarkt Windach, Germany</strong><br />
+              <i>Work as cashier and organize the assortment</i>
+            </p>
+          </div>
+        </div>
+
+        <div class="project">
+          <div class="runTime CV">
+            <p> 03/2014 – 09/2014</p>
+          </div>
+          <div class="projectDiscription CV">
+            <p>
+              <strong>Newspaper Boy for the Ammersee-West Journal in Windach, Germany</strong><br />
+              <i>Weekly delivery of newspapers for the local village</i>
+            </p>
+          </div>
+        </div>
+      </div>
+    </mat-expansion-panel>
+
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        <mat-panel-title style="align-items: center">
+          Skills
+        </mat-panel-title>
+      </mat-expansion-panel-header>
+      <br>
+      <div class="projectTable">
+        <div class="project">
+          <div class="runTime" style="width: 50%; background:#eee; text-align:left;padding-left:30px">
+            <h3> Hard Skills</h3>
+            <ul>
+              <li>Java (+++)</li>
+              <li>HTML / CSS (+++)</li>
+              <li>Angular (++)</li>
+              <li>Ionic 3 (++)</li>
+              <li>Assembler x86 (++)</li>
+              <li>Functional Ocaml (++)</li>
+              <li>Git (++)</li>
+              <li>LaTeX (++)</li>
+              <li>Microsoft Office 365 (++)</li>
+              <li>Python (+)</li>
+              <li>SQL (+)</li>
+              <li>Javascript (+)</li>
+              <li>UML (++)</li>
+              <li>C (+)</li>
+
+            </ul>
+          </div>
+          <div class="projectDiscription" style="width: 50%;text-align:left;padding-left: 30px;">
+            <h3> Soft Skills</h3>
+            <ul>
+              <li>Team player</li>
+              <li>Communicative</li>
+              <li>Creative</li>
+              <li>Organized</li>
+              <li>Open minded</li>
+              <li>Confident</li>
+              <li>Flexible</li>
+              <li>Motivated</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </mat-expansion-panel>
+
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        <mat-panel-title style="align-items: center">
+          Languages
+        </mat-panel-title>
+      </mat-expansion-panel-header>
+      <br>
+      <div class="projectTable">
+        <div class="project">
+          <div class="runTime" style="width: 50%;border:none;">
+            <h3> Language</h3>
+            <p>German</p>
+          </div>
+          <div class="projectDiscription" style="width: 50%;border:none;">
+            <h3> Proficiency</h3>
+            <p>Native</p>
+          </div>
+        </div>
+
+        <div class="project">
+          <div class="runTime" style="width: 50%;border:none;">
+            <p>English</p>
+          </div>
+          <div class="projectDiscription" style="width: 50%;border:none;">
+            <p>C1</p>
+          </div>
+        </div>
+
+        <div class="project">
+          <div class="runTime" style="width: 50%; border:none;">
+            <p>Latin</p>
+          </div>
+          <div class="projectDiscription" style="width: 50%; border:none;">
+            <p>Great Latinum</p>
+          </div>
+        </div>
+      </div>
+    </mat-expansion-panel>
+  </mat-accordion>
+</mat-card>

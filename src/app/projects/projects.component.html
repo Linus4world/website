@@ -32,7 +32,8 @@
               [captions]="paragraph.captions"></app-image-slider>
           </div>
         </div>
-        <div class="footnotes">
+        <div class="footnotes" *ngIf="p.footnotes">
+          <mat-divider class="divider"></mat-divider>
           <strong>Useful links:</strong>
           <ol>
             <li *ngFor="let note of p.footnotes"><a href="{{note[1]}}" target="_blank">{{note[0]}}</a></li>
