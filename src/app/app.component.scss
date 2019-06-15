@@ -23,6 +23,26 @@
     overflow: auto;
 }
 
+.cv-page{
+    background-image: none;
+    background-color: #454545;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    overflow: auto;
+}
+
+.contact-page{
+    background: url('../assets/images/background-home.jpg') no-repeat center fixed; 
+    // background-color: white;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    overflow: auto;
+}
+
 #mail-alert{
     opacity:0;
     display:none;

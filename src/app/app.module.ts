@@ -14,6 +14,8 @@ import { ImageSliderComponent } from './image-slider/image-slider.component';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatButtonModule } from '@angular/material/button';
+import { MatDividerModule } from '@angular/material/divider';
+import { MatToolbarModule } from '@angular/material/toolbar';
 
 @NgModule({
   declarations: [
@@ -32,7 +34,9 @@ import { MatButtonModule } from '@angular/material/button';
     MatCardModule,
     MatExpansionModule,
     MatProgressSpinnerModule,
-    MatButtonModule
+    MatButtonModule,
+    MatDividerModule,
+    MatToolbarModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -10,6 +10,7 @@ export class ContactComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    document.getElementById('background-img').className = 'contact-page';
   }
 
 }
