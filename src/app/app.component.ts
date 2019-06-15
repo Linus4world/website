@@ -30,6 +30,11 @@ export class AppComponent implements OnInit {
           link: './cv',
           index: 2
       },
+      {
+        label: 'Contact',
+        link: './contact',
+        index: 3
+      }
   ];
   }
 

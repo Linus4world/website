@@ -1,6 +1,6 @@
 <mat-card class="CV-card">
   <div class="cv-header">
-    <button mat-raised-button class="download-button" title="Download CV" (click)="download()">
+    <button mat-raised-button class="download-button" title="Download CV" (click)="download('CV.pdf')">
       <i class="fas fa-download"></i>
     </button>
     <h1>CURRICULUM VITAE</h1>
@@ -72,7 +72,7 @@
         </mat-panel-title>
         <mat-panel-description>
           <button mat-raised-button title="Download Academic Success"
-            (click)="download()">
+            (click)="download(null)">
             <i class="fas fa-download"></i>
           </button>
         </mat-panel-description>
@@ -139,6 +139,20 @@
               <li>Signal Representation </li>
               <li>Introduction to Signal Processing for IN </li>
               <li>Electrical Measuring Technology for Computer Scientists </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="project">
+          <div class="runTime">
+            <p>Elective Courses</p>
+          </div>
+          <div class="projectDiscription" style="text-align:left">
+            <ul>
+              <li>Special Topics In Business Computing (Blockchain)</li>
+              <li>Special Topics: Parallel Processing</li>
+              <li>Special Topics: Webprogramming</li>
+              <li>Special Topics: Seminar in Directed Studies in Computer Science (Eyetracking)</li>
             </ul>
           </div>
         </div>
