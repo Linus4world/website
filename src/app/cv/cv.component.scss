@@ -80,3 +80,22 @@ mat-expansion-panel{
 .project div{
     display:table-cell;
 }
+
+@media (max-width: 767px) {
+    .CV-card{
+        margin: 0.5em;
+    }
+
+    .cv-img{
+        max-width: 80px;
+    }
+
+    .download-button{
+        font-size: 1em;
+        padding: 0.2em 0.5em;
+    }
+
+    .cv-header > h1{
+        font-size: 1.5em;
+    }
+}

@@ -24,12 +24,18 @@ export class ImageSliderComponent implements OnInit, AfterViewInit {
   }
 
   // Next/previous controls
-  public plusSlides(n: number) {
+  public plusSlides(n: number, event?: { stopPropagation: () => void; }) {
+    if (event !== undefined) {
+      event.stopPropagation();
+    }
     this.showSlides(this.slideIndex += n);
   }
 
   // Thumbnail image controls
-  public currentSlide(n: number) {
+  public currentSlide(n: number, event?: { stopPropagation: () => void; }) {
+    if (event !== undefined) {
+      event.stopPropagation();
+    }
     this.showSlides(this.slideIndex = n);
   }
 
@@ -49,6 +55,11 @@ export class ImageSliderComponent implements OnInit, AfterViewInit {
     if (dots[this.slideIndex - 1]) {
       dots[this.slideIndex - 1].className += ' active';
     }
+  }
+
+  public openImage(url: string) {
+    const win = window.open(url, '_blank');
+    win.focus();
   }
 
 }

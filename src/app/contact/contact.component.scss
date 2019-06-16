@@ -68,3 +68,22 @@ mat-divider{
     position: relative !important;
     margin: auto !important;
 }
+
+@media (max-width: 767px) {
+    .contact-card{
+        padding: 1em;
+    }
+
+    .center{
+        padding: 0.5em;
+        height: 60%;
+    }
+
+    h1{
+        font-size: 2em;
+    }
+
+    p{
+        font-size: 1em;
+    }
+}

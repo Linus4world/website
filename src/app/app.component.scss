@@ -104,4 +104,25 @@
   width: 50%;
 }
 
+.branding > img{
+    margin-right: 0.5em;
+    width: 60px;
+}
+
+@media (max-width: 767px) {
+    .branding{
+        margin: 0;
+        font-size: 0.7em;
+    }
+
+    .branding:after {
+        display: none;
+    }
+    
+    .branding > img{
+        margin-right: 0;
+        width: 40px;
+    }
+}
+
 
