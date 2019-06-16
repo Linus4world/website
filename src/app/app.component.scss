@@ -14,8 +14,9 @@
 }
 
 .project-page{
-    background-image: none;
-    background-color: #454545;
+    // background-image: none;
+    // background-color: #454545;
+    background: url('../assets/images/background-home.jpg') no-repeat center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -24,8 +25,9 @@
 }
 
 .cv-page{
-    background-image: none;
-    background-color: #454545;
+    // background-image: none;
+    // background-color: #454545;
+    background: url('../assets/images/background-home.jpg') no-repeat center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -100,6 +102,27 @@
   display: block;
   height: 80%;
   width: 50%;
+}
+
+.branding > img{
+    margin-right: 0.5em;
+    width: 60px;
+}
+
+@media (max-width: 767px) {
+    .branding{
+        margin: 0;
+        font-size: 0.7em;
+    }
+
+    .branding:after {
+        display: none;
+    }
+    
+    .branding > img{
+        margin-right: 0;
+        width: 40px;
+    }
 }
 
 

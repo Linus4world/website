@@ -1,44 +1,45 @@
-<br><br>
-<mat-card *ngFor="let p of projects" class="card">
-  <div class="runtime">
-    {{p.runtime}}<br><br>
-    <button mat-raised-button class="download-button" title="Download {{p.download}}" (click)="download(p.download)">
-      <i class="fas fa-download"></i>
-    </button>
-  </div>
-  <div class="header">
-    <img src="{{p.logo}}" style="max-width: 6em; max-height: 6em; height: auto; width: auto;">
-    <div class="p-titles">
-      <h1>{{p.title}}</h1>
-      <h3>{{p.shortDescription}}</h3>
+<div class="project-container">
+  <mat-card *ngFor="let p of projects" class="card">
+    <div class="runtime">
+      {{p.runtime}}<br><br>
+      <button mat-raised-button class="download-button" title="Download {{p.download}}" (click)="download(p.download)">
+        <i class="fas fa-download"></i>
+      </button>
     </div>
-  </div>
-  <mat-expansion-panel>
-    <mat-expansion-panel-header>
-      <mat-panel-title>
-        Description
-      </mat-panel-title>
-      <mat-panel-description>
-        Click me to expand / collapse!
-      </mat-panel-description>
-    </mat-expansion-panel-header>
-    <br>
-    <ng-template matExpansionPanelContent>
-      <div *ngFor="let paragraph of p.paragraphs">
-        <strong>{{paragraph.title}}</strong>
-        <p style="white-space:pre-wrap;">{{paragraph.text}}</p>
-        <div class="image-slider-container">
-          <app-image-slider *ngIf="paragraph.images" [id]="p.title + paragraph.title" [images]="paragraph.images"
-            [captions]="paragraph.captions"></app-image-slider>
+    <div class="header">
+      <img src="{{p.logo}}">
+      <div class="p-titles">
+        <h1>{{p.title}}</h1>
+        <h3>{{p.shortDescription}}</h3>
+      </div>
+    </div>
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          Description
+        </mat-panel-title>
+        <mat-panel-description>
+          Show more?
+        </mat-panel-description>
+      </mat-expansion-panel-header>
+      <br>
+      <ng-template matExpansionPanelContent>
+        <div *ngFor="let paragraph of p.paragraphs">
+          <strong>{{paragraph.title}}</strong>
+          <p style="white-space:pre-wrap;">{{paragraph.text}}</p>
+          <div class="image-slider-container">
+            <app-image-slider *ngIf="paragraph.images" [id]="p.title + paragraph.title" [images]="paragraph.images"
+              [captions]="paragraph.captions"></app-image-slider>
+          </div>
         </div>
-      </div>
-      <div class="footnotes" *ngIf="p.footnotes">
-        <mat-divider class="divider"></mat-divider>
-        <strong>Useful links:</strong>
-        <ol>
-          <li *ngFor="let note of p.footnotes"><a href="{{note[1]}}" target="_blank">{{note[0]}}</a></li>
-        </ol>
-      </div>
-    </ng-template>
-  </mat-expansion-panel>
-</mat-card>
+        <div class="footnotes" *ngIf="p.footnotes">
+          <mat-divider class="divider"></mat-divider>
+          <strong>Useful links:</strong>
+          <ol>
+            <li *ngFor="let note of p.footnotes"><a href="{{note[1]}}" target="_blank">{{note[0]}}</a></li>
+          </ol>
+        </div>
+      </ng-template>
+    </mat-expansion-panel>
+  </mat-card>
+</div>
