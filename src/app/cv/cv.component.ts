@@ -15,8 +15,11 @@ export class CvComponent implements OnInit {
     document.getElementById('background-img').className = 'cv-page';
   }
 
-  public download(url: string) {
-    if (url === undefined) {
+  public download(url: string, event?: { stopPropagation: () => void; }) {
+    if (event !== undefined) {
+      event.stopPropagation();
+    }
+    if (url === null) {
       this.alertService.activateAlert(AlertType.DOWNLOAD);
     } else {
       url = '../../assets/download/' + url;
