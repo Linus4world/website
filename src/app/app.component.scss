@@ -109,6 +109,12 @@
     width: 60px;
 }
 
+@media (max-width: 900px) {
+    .branding:after {
+        border-right: none;
+    }
+}
+
 @media (max-width: 767px) {
     .branding{
         margin: 0;
