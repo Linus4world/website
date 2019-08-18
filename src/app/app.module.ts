@@ -16,6 +16,9 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatButtonModule } from '@angular/material/button';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatToolbarModule } from '@angular/material/toolbar';
+import { ProjectOverlayComponent } from './projects/overlay/project-overlay.component';
+import { OverlayModule } from '@angular/cdk/overlay';
+import { OverlayService } from './overlay.service';
 
 @NgModule({
   declarations: [
@@ -24,7 +27,8 @@ import { MatToolbarModule } from '@angular/material/toolbar';
     ProjectsComponent,
     CvComponent,
     ContactComponent,
-    ImageSliderComponent
+    ImageSliderComponent,
+    ProjectOverlayComponent,
   ],
   imports: [
     BrowserModule,
@@ -36,9 +40,11 @@ import { MatToolbarModule } from '@angular/material/toolbar';
     MatProgressSpinnerModule,
     MatButtonModule,
     MatDividerModule,
-    MatToolbarModule
+    MatToolbarModule,
+    OverlayModule,
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  providers: [OverlayService],
+  bootstrap: [AppComponent],
+  entryComponents: [ProjectOverlayComponent]
 })
 export class AppModule { }
