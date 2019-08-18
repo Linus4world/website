@@ -4,8 +4,8 @@
     flex-wrap: wrap;
     justify-content: space-around;
     max-width: 920px;
-    // align-items: center;
     align-self: center;
+    padding: 1.5em;
 }
 
 .list-item{
@@ -26,6 +26,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 2em;
 }
 
 .header > img{
@@ -109,7 +110,7 @@ mat-expansion-panel-header{
         margin: 0;
     }
 
-    .p-titles > h1{
+    .p-titles > h2{
         font-size: 1.5em;
     }
     .p-titles > h3{

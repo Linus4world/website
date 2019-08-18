@@ -1,0 +1,17 @@
+<div class="background">
+  <div *ngFor="let paragraph of project.paragraphs">
+    <strong>{{paragraph.title}}</strong>
+    <p style="white-space:pre-wrap;">{{paragraph.text}}</p>
+    <div class="image-slider-container">
+      <app-image-slider *ngIf="paragraph.images" [id]="project.title + paragraph.title" [images]="paragraph.images"
+        [captions]="paragraph.captions"></app-image-slider>
+    </div>
+  </div>
+  <div class="footnotes" *ngIf="project.footnotes">
+    <mat-divider class="divider"></mat-divider>
+    <strong>Useful links:</strong>
+    <ol>
+      <li *ngFor="let note of project.footnotes"><a href="{{note[1]}}" target="_blank">{{note[0]}}</a></li>
+    </ol>
+  </div>
+</div>
