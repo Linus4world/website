@@ -1,6 +1,64 @@
 {
     "projects": [
         {
+            "logo": "../../assets/images/angular-logo.png",
+            "runtime": "06/19 - 07/19",
+            "title": "Angular Website",
+            "shortDescription": "Transforming my old HTML website into a powerful Angular application",
+            "download": "angular-website.zip",
+            "paragraphs": [
+                {
+                    "title": "Starting point ",
+                    "text": "Back in March 2018 I started with the creation of my first online portfolio. This project aimed to achieve two main goals: First, to increase my skills and knowledge in HTML, CSS and partly JavaScript. Second, to give companies, and institutions a better chance of getting to know me during, for example, an application process. However, designing all website components by oneself is a lot work, especially when there is new content coming every so often and the structure of the website changes due to the keenly experimental owner. As the portfolio grew bigger, and the structure of the project more and more chaotic, I decided it was time to look for something more advanced to manage my website. Something that 1) helps me to manage my content in a more sophisticated way, 2) offers me a range of prebuild options to design my components and 3) lets me discover a new framework / programming language. As a working student I was working a lot with the Ionic 3 framework, which is based on Angular. This looked like the perfect way to go.",
+                    "images": [
+                        "../assets/images/angular1.png",
+                        "../assets/images/angular2.png"
+                    ],
+                    "captions": [
+                        "Let's discover a new framework!",
+                        "The complete book of Angular 4"
+                    ]
+                },
+                {
+                    "title": "The Creation Process",
+                    "text": "The implementation turned out to be pretty straight forward since I already had the content and the knowledge to start right away. It took maybe one or two days to create a mirror of my old website, but that was not the end of it. The powerful Angular framework enabled me to integrate new features, such as dropdown menus, overlays, deeplinking, etc. On top of that I experimented with the styling of the site. For this I read several style guideline documentations for angular and general web development as well as studied nearly a hundred well-known websites to get a feeling for how a modern homepage should look like. The end result should be minimalistic and easily accessible, but also feature a certain flair of artistic creativity. And though there is always room for enhancements, I can say today that I am very pleased with the result!",
+                    "images": [
+                        "../assets/images/angular3.png",
+                        "../assets/images/angular4.png",
+                        "../assets/images/angular5.png",
+                        "../assets/images/angular6.png"
+                    ],
+                    "captions": [
+                        "Minimalistic home page, with an artistic layout",
+                        "Projects are now ordered in a gallery like manner",
+                        "The CV offers dropdown menus for a clear appearance while also preserving the well-known CV structure",
+                        "Angular works with TypeScript, which makes developing clear and well ordered"
+                    ]
+                }
+            ],
+            "footnotes": [
+                [
+                    ""
+                ],
+                [
+                    "Angular book",
+                    "https://www.ng-book.com/2/"
+                ],
+                [
+                    "Ateneo de Manila",
+                    "https://www.ateneo.edu/"
+                ],
+                [
+                    "Ionic",
+                    "https://ionicframework.com/"
+                ],
+                [
+                    "Nem2 sdk for Typescript",
+                    "https://github.com/nemtech/nem2-sdk-typescript-javascript"
+                ]
+            ]
+        },
+        {
             "logo": "../../assets/images/nem.png",
             "runtime": "04/19 - 05/19",
             "title": "Debt Tracker",
@@ -25,7 +83,7 @@
                 },
                 {
                     "title": "Implementation",
-                    "text": "This app was developed in the context of the class CS 189 A - SPECIAL TOPICS IN BUSINESS COMPUTING of the Ateneo de Manila University Philippines in cooperation with Nem. The app is build using Ionic 3, Angular 8, Cordova and NodeJS. It furthermore uses the Nem2-sdk for Typescript. The aim of the project was to build a basic structure of an app for a profitable business model that uses features of the nem blockchain. This means that the app is not ready for deployment yet! \nLet me talk about how the features of the app are realised. When the user creates a new group, he has to provide the app with the adresses of the nem account of the other users. The app automatically creates an account for every new user and provides a 'Copy adress' button. Once the group is created, the group details get saved as a .json file locally. A group invitation including the details (such as members and names) are sent to the other users as a transaction in the blockchain. The app querries for new transactions periodically and can therefore detect all new actions. The whole user to user communication, including the records of new loans is done by a ingenious communication system over the blockchain. No mosaics or crypto currencies need to be sent, everything works by using the transaction messages.",
+                    "text": "The implementation ",
                     "images": [
                         "../assets/images/DebtTracker5.png",
                         "../assets/images/DebtTracker6.png",
@@ -34,7 +92,7 @@
                     ],
                     "captions": [
                         "Interface of the messages used for the blockchain communication",
-                        "Functions to create transaction objects which will be sent to other users to share information",
+                        "",
                         "Function to querry for new transaction, the account is involved in",
                         "Once a new message is received, this function interpretes it and takes action"
                     ]
@@ -47,10 +105,22 @@
                 }
             ],
             "footnotes": [
-                ["Nem.io", "https://nem.io/"],
-                ["Ateneo de Manila", "https://www.ateneo.edu/"],
-                ["Ionic", "https://ionicframework.com/"],
-                ["Nem2 sdk for Typescript", "https://github.com/nemtech/nem2-sdk-typescript-javascript"]
+                [
+                    "Nem.io",
+                    "https://nem.io/"
+                ],
+                [
+                    "Ateneo de Manila",
+                    "https://www.ateneo.edu/"
+                ],
+                [
+                    "Ionic",
+                    "https://ionicframework.com/"
+                ],
+                [
+                    "Nem2 sdk for Typescript",
+                    "https://github.com/nemtech/nem2-sdk-typescript-javascript"
+                ]
             ]
         },
         {
@@ -63,8 +133,12 @@
                 {
                     "title": "The Concept",
                     "text": "Master Task is conceived to help the user to keep track of his or her tasks. The app has an integrated scheduler that calculates which of your duties you should be working on next, in order not to miss a deadline or geting caught in stress. To make the scheduler most effective the user can set the importance, the complexity and the deadline type (soft or hard) of the task as well as the deadline date. But humans tend to drop tasks which they think are not that important right now when are stressed. Therefore, I have developed a strategy to motivate the users to actually fulfil the tasks they have set. Every user's progress is represented as a little flying island. When you begin to use the app, the island is pretty much a rocky desert. But as you master your first tasks and improve your life, the island starts to flourish. A water source emerges from the ground and many types of plants and trees start to grow. At least as long as you keep working on your tasks, because if you miss deadlines or stop adding new tasks, the plants will shrink and the water source will dry up.",
-                    "images": ["../assets/images/island.jpg"],
-                    "captions": ["Sketch of the progress island"]
+                    "images": [
+                        "../assets/images/island.jpg"
+                    ],
+                    "captions": [
+                        "Sketch of the progress island"
+                    ]
                 },
                 {
                     "title": "Implementation",
@@ -86,8 +160,14 @@
                 }
             ],
             "footnotes": [
-                ["OpenGL tuturials by ThinMatrix on Youtube", "https://www.youtube.com/user/ThinMatrix"],
-                ["Blender tutorials for creating 3D models by Blender Guru on Youtube", "https://www.youtube.com/user/AndrewPPrice"]
+                [
+                    "OpenGL tuturials by ThinMatrix on Youtube",
+                    "https://www.youtube.com/user/ThinMatrix"
+                ],
+                [
+                    "Blender tutorials for creating 3D models by Blender Guru on Youtube",
+                    "https://www.youtube.com/user/AndrewPPrice"
+                ]
             ]
         },
         {
@@ -106,14 +186,22 @@
                 {
                     "title": "The Paper",
                     "text": "In the paper, I outline the state of art in data mining for big Online Social Networks such as Twitter and Facebook. The survey covers the basics of graph mining and presents several network properties for OSNs. In the first part all the necessary technical terms are explained, such as cluster coefficient, centrality and betweenes. Subsequently, I take a look at multiple algorithms addressing standard problems in network analysis such as community detection and information spreading. Therefore, I considered modern algorithms, for instance Muric et al.'s method to identify a network's most influential nodes by treating the graph as an LTI system and other, more classic algorithms like Girvan and Newman's community detection strategy. Finally, I discussed several application areas like event detection and sentiment analysis where data mining shows promising results. Writing this paper really was a challenge for me due to the complexity of the topic. There are hundreds to thousands of research papers addressing all kinds of subtopics in this field. In my research I looked upon round about 70 academic writings and included 25 of them directly in my work. It was quite fascinating to read about all these different ideas and algorithms scientists invented to use OSN for seemingly unconnected fields. Although, if have to say that some algorithms took me days to completely understand them, as there are often not described precisely enough, or they refer to definitions assumed to be known. I think this was the course I learned most this semester and by the way, I also practised my English writing too",
-                    "images": ["../assets/images/paper.png"],
-                    "captions": ["Abstract from the paper"]
+                    "images": [
+                        "../assets/images/paper.png"
+                    ],
+                    "captions": [
+                        "Abstract from the paper"
+                    ]
                 },
                 {
                     "title": "Implementation",
                     "text": "When I presented my work in front of the other course participants I boosted my presentation by adding a little live demo of Newman and Girvan's community detection algorithm. The program can detect a community within a given social network graph and returns the found groups. This algorithm was never released officially in Java and only a few parts were published in Python, so I tried to convert the algorithm from text form into program code. I came up with a quick and dirty implementation in less a day, hence the program does not perfectly work in all cases nor is it documented very well. However, it worked fine for me on most of my tests and did a great job in my presentation. \nIf you are interested in the paper or the source code of the implemented algorithm, you can download a copy down below. Please note that because I do not have all the licences for the pictures used in the paper, the work must not be made public without asking.",
-                    "images": ["../assets/images/community.png"],
-                    "captions": ["Output of the community detection program. Nodes inside a communities have the same color"]
+                    "images": [
+                        "../assets/images/community.png"
+                    ],
+                    "captions": [
+                        "Output of the community detection program. Nodes inside a communities have the same color"
+                    ]
                 }
             ]
         },
@@ -127,14 +215,22 @@
                 {
                     "title": "Indroduction",
                     "text": "At the beginning of my fourth semester an acquaintances of mine asked me to help her with creating a little desktop app. She imagined a program wich would help her to organize her cooking recipes more easily since the number of formulas had surpassed the mark where they could be managed in an paper written form. She gave me a presice draft of the layout all recipes should have and what requirements she had for the program. This was my first experience with building an app for another person and since I only had a limited amount of time to work on this project I needed to clearly identify what I could build in this time and what functions my program should provide in the end. This is what I came up with:",
-                    "images": ["../assets/images/cookPreview.png"],
-                    "captions": ["Interface of the CookManager"]
+                    "images": [
+                        "../assets/images/cookPreview.png"
+                    ],
+                    "captions": [
+                        "Interface of the CookManager"
+                    ]
                 },
                 {
                     "title": "The program",
                     "text": "The Cook Manager provides a search structure that differs between the two recipe types 'cooking' and 'baking'. You can search for a specific recipe by typing in the name and you can sort the results by either date or name. This makes the searching much easier than looking it up by hand. Each recipe has a consistent layout, containing a name, an image, a type, the ingeredients and the preperation. New recipes can be added easily and existing ones can be changed or deleted.",
-                    "images": ["../assets/images/recipeLayout.png"],
-                    "captions": ["Detail page of a selected Recipe"]
+                    "images": [
+                        "../assets/images/recipeLayout.png"
+                    ],
+                    "captions": [
+                        "Detail page of a selected Recipe"
+                    ]
                 },
                 {
                     "title": "The implementation process",
@@ -154,8 +250,12 @@
                 {
                     "title": "Indroduction",
                     "text": "Semester breaks always are the best times to go for new projects. After my third semester I decided that I wanted to learn more about creating a website. I also figured that it may be nice to have an own portfolio, which can be given to some companies, since the standard application documents do not provide enough space to get to know a person. An online Portfolio is an ideal place to showcase projects, give others an idea of what a person is about and also to leave information on how to contact that person.",
-                    "images": ["../assets/images/web1.png"],
-                    "captions": ["Interface of the CookManager"]
+                    "images": [
+                        "../assets/images/web1.png"
+                    ],
+                    "captions": [
+                        "Interface of the CookManager"
+                    ]
                 },
                 {
                     "title": "Realisation",
@@ -179,13 +279,34 @@
                 }
             ],
             "footnotes": [
-                ["Banana Pi", "https://de.wikipedia.org/wiki/Banana_Pi"],
-                ["Raspbian for Banana Pi", "http://www.lemaker.org/product-bananapi-resource.html"],
-                ["Selfhost.de", "http://www.selfhost.de/"],
-                ["Let's Encrypt", "https://letsencrypt.org/"],
-                ["W3schools.com", "https://www.w3schools.com/"],
-                ["Marcus' video guide", "https://www.youtube.com/watch?v=Dc-2HaN4iKk"],
-                ["Fontawesome.com", "https://fontawesome.com/"]
+                [
+                    "Banana Pi",
+                    "https://de.wikipedia.org/wiki/Banana_Pi"
+                ],
+                [
+                    "Raspbian for Banana Pi",
+                    "http://www.lemaker.org/product-bananapi-resource.html"
+                ],
+                [
+                    "Selfhost.de",
+                    "http://www.selfhost.de/"
+                ],
+                [
+                    "Let's Encrypt",
+                    "https://letsencrypt.org/"
+                ],
+                [
+                    "W3schools.com",
+                    "https://www.w3schools.com/"
+                ],
+                [
+                    "Marcus' video guide",
+                    "https://www.youtube.com/watch?v=Dc-2HaN4iKk"
+                ],
+                [
+                    "Fontawesome.com",
+                    "https://fontawesome.com/"
+                ]
             ]
         },
         {
@@ -294,7 +415,10 @@
                 }
             ],
             "footnotes": [
-                ["Download Jmic", "http://wwwi10.lrr.in.tum.de/~eti/Praktikum/JMic.jar"]
+                [
+                    "Download Jmic",
+                    "http://wwwi10.lrr.in.tum.de/~eti/Praktikum/JMic.jar"
+                ]
             ]
         },
         {
@@ -362,8 +486,14 @@
                 }
             ],
             "footnotes": [
-                ["Hank der Maulwurf on Amazon", "Hank der Maulwurf on Amazon"],
-                ["Marcus Video Guide", "https://www.youtube.com/watch?v=lDzKX3djE-M"]
+                [
+                    "Hank der Maulwurf on Amazon",
+                    "Hank der Maulwurf on Amazon"
+                ],
+                [
+                    "Marcus Video Guide",
+                    "https://www.youtube.com/watch?v=lDzKX3djE-M"
+                ]
             ]
         }
     ]
