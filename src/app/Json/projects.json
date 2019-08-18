@@ -1,6 +1,63 @@
 {
     "projects": [
         {
+            "logo": "../../assets/images/deeplearning-logo.png",
+            "runtime": "07/19 - 07/19",
+            "title": "Deeplinking Course",
+            "shortDescription": "Learning the basics of deeplearning in computervision and Pytorch",
+            "download": "deeplearning.zip",
+            "paragraphs": [
+                {
+                    "title": "Motivation",
+                    "text": "The field of deep learning is undeniably one of the most interesting fields of computer science. The first time I heard about Neural Networks used to form a powerful Artificial Intelligence was in 2011 when the so called \"Watson\" AI competed against to human players in the complex gameshow \"Jeopardy!\". Watson was able to win against both players in the competition over three rounds. For this the computer had to learn to interpret human language, understand the tricky way of how questions are asked in the show and find the correct answer. A sensation up to this date impossible to think of. Since then a lot has happened and more systems like Google's Alpha Go or personal computer assistants like Alexa showed us again and again that given enough training data and processing power, a computer can excel humans with ease. After I explored some existing AIs in my \"Smart Mirror\" project, I wanted to dig deeper and really understand how machines can learn tasks in minutes where a human requires years of practise. So I baught the Udemy course \"Pytorch for Deeplearning and Computervision\" and immersed myself in the worl of neural networks and deeplearning.",
+                    "images": [
+                        "../assets/images/deeplearning1.jpg",
+                        "../assets/images/deeplearning2.jpg"
+                    ],
+                    "captions": [
+                        "Schema of a (Deep) Neural Network",
+                        "Watson competing against the Jeopardy campions"
+                    ]
+                },
+                {
+                    "title": "The Basics",
+                    "text": "The course begins with a refresher in Python and Numpy. I am pretty familiar with Python and Matlab so there was not much to learn from those chapters. Chapter 3 begins with a brief introduction to the concept of Tensors. After that the course dives into the math behind neural networks. Linear regression, loss functions, gradient decents. To show how these machanics work together we applied a simple network to a two class dataset and trained the model until it was able to seperate the clusters. Not bad for a start! However, our model can only seperate both classes by a linear function. What if our dataset is more complex? This is where we learn the necessity of multi layered networks - Deep Neural Networks. The course explaines the concepts of the Feedforward process and the Backpropagation. We then test our new abilities to classify the famous MNIST dataset. We validate our model by feeding in new data and understand the problem of overfitting. We can now differ numbers inside pictures, but for larger images one needs a more powerful model.",
+                    "images": [
+                        "../assets/images/deeplearning3.jpg",
+                        "../assets/images/deeplearning4.jpg",
+                        "../assets/images/deeplearning5.jpg",
+                        "../assets/images/deeplearning6.jpg"
+                    ],
+                    "captions": [
+                        "Linear is used to make a graph fit a dataset",
+                        "Classification by a Deep Neural Network",
+                        "Our model can recognice numbers of the MNIST dataset",
+                        "Simple Deep Neural Network featuring multiple fully connected layers"
+                    ]
+                },
+                {
+                    "title": "Convolutional Neural Networks and Style Transfer",
+                    "text": "Convolutional networks are more sophisticated in its structure, enabling the user to work with larger inputs and in total achieve better results. The model uses multiple convolution and pooling layers to create so called feature maps. Characteristics the computer uses to classify for example images of animals (CIFAR10 dataset). The course also presents the technique of transfer learning, that is using the pre-aquired knowledge of another model in one's own. In our case the VGG16 model (pre-trained on animal classification) achieves impressive results on a new validation dataset even with a relatively small training set. Last but not least the course shows a state of the art application for convolutional neural networks: Style transfer. We mean by that, transfering the style of an image on to another image, keeping the other image's content. You can see the results of this amazing technique in the picture down below. Seeing how a computer can create something like this with just a few lines of code made me for ever invested in deep learning. My journey in this field is to be continued!",
+                    "images": [
+                        "../assets/images/deeplearning7.jpeg",
+                        "../assets/images/deeplearning8.jpg",
+                        "../assets/images/deeplearning9.jpg"
+                    ],
+                    "captions": [
+                        "The structure of a convolutional neural network",
+                        "Our model is nearly perfect at classifing animals",
+                        "The style of one picture is transfered to another one"
+                    ]
+                }
+            ],
+            "footnotes": [
+                [
+                    "\"Pytorch for Deeplearning and Computervision\" on Udemy",
+                    "https://www.udemy.com/pytorch-for-deep-learning-and-computer-vision/"
+                ]
+            ]
+        },
+        {
             "logo": "../../assets/images/angular-logo.png",
             "runtime": "06/19 - 07/19",
             "title": "Angular Website",
@@ -9,7 +66,7 @@
             "paragraphs": [
                 {
                     "title": "Starting point ",
-                    "text": "Back in March 2018 I started with the creation of my first online portfolio. This project aimed to achieve two main goals: First, to increase my skills and knowledge in HTML, CSS and partly JavaScript. Second, to give companies, and institutions a better chance of getting to know me during, for example, an application process. However, designing all website components by oneself is a lot work, especially when there is new content coming every so often and the structure of the website changes due to the keenly experimental owner. As the portfolio grew bigger, and the structure of the project more and more chaotic, I decided it was time to look for something more advanced to manage my website. Something that 1) helps me to manage my content in a more sophisticated way, 2) offers me a range of prebuild options to design my components and 3) lets me discover a new framework / programming language. As a working student I was working a lot with the Ionic 3 framework, which is based on Angular. This looked like the perfect way to go.",
+                    "text": "",
                     "images": [
                         "../assets/images/angular1.png",
                         "../assets/images/angular2.png"
@@ -21,7 +78,7 @@
                 },
                 {
                     "title": "The Creation Process",
-                    "text": "The implementation turned out to be pretty straight forward since I already had the content and the knowledge to start right away. It took maybe one or two days to create a mirror of my old website, but that was not the end of it. The powerful Angular framework enabled me to integrate new features, such as dropdown menus, overlays, deeplinking, etc. On top of that I experimented with the styling of the site. For this I read several style guideline documentations for angular and general web development as well as studied nearly a hundred well-known websites to get a feeling for how a modern homepage should look like. The end result should be minimalistic and easily accessible, but also feature a certain flair of artistic creativity. And though there is always room for enhancements, I can say today that I am very pleased with the result!",
+                    "text": "",
                     "images": [
                         "../assets/images/angular3.png",
                         "../assets/images/angular4.png",
@@ -29,32 +86,17 @@
                         "../assets/images/angular6.png"
                     ],
                     "captions": [
-                        "Minimalistic home page, with an artistic layout",
+                        "Linear is used to make a graph fit a dataset",
                         "Projects are now ordered in a gallery like manner",
-                        "The CV offers dropdown menus for a clear appearance while also preserving the well-known CV structure",
+                        "Our model can recognice numbers of the MNIST dataset",
                         "Angular works with TypeScript, which makes developing clear and well ordered"
                     ]
                 }
             ],
             "footnotes": [
                 [
-                    ""
-                ],
-                [
                     "Angular book",
                     "https://www.ng-book.com/2/"
-                ],
-                [
-                    "Ateneo de Manila",
-                    "https://www.ateneo.edu/"
-                ],
-                [
-                    "Ionic",
-                    "https://ionicframework.com/"
-                ],
-                [
-                    "Nem2 sdk for Typescript",
-                    "https://github.com/nemtech/nem2-sdk-typescript-javascript"
                 ]
             ]
         },
