@@ -3,7 +3,7 @@
         {
             "logo": "../../assets/images/deeplearning-logo.png",
             "runtime": "07/19 - 07/19",
-            "title": "Deeplinking Course",
+            "title": "Deeplearning Course",
             "shortDescription": "Learning the basics of deeplearning in computervision and Pytorch",
             "download": "deeplearning.zip",
             "paragraphs": [
@@ -58,6 +58,87 @@
             ]
         },
         {
+            "logo": "../../assets/images/magicmirror-logo.jpg",
+            "runtime": "06/19 - 07/19",
+            "title": "MagicMirror Construction",
+            "shortDescription": "Using a Raspberry Pi to build a MagicMirror with voice command support",
+            "download": "MagicMirror.zip",
+            "paragraphs": [
+                {
+                    "title": "Motivation",
+                    "text": "Google Assistant, Alexa, Siri, Cortana. The big tech-companies have finally discovered the market for smart assistants. Only in 2016 the Google Assistant first found its way into android smartphones, giving us basic voice commands to play around and a glimpse into what the future might look like. Three years afterwards the AI is already so advanced that it can be seriously used in everyday life. Google Dot or Amazon Echo bring their assistants in our homes, enabling us to control our lights, heaters or music. Truly impressive. But for me the features where still not enough. I want to have the full control to teach my assistant special tasks, to personalize it. That's when I stumbled upon an article, where a young talented programmer brought the idea of a computer assistant to the next level. He built a smart mirror presenting the user tons of useful information like the wheater or local news directly on the surface - with voice command control! After seeing this, I was convinced to build my own. I ordered the hardware parts on Amazon and was ready to start!",
+                    "images": [
+                        "../assets/images/magicmirror1.jpg",
+                        "../assets/images/magicmirror2.jpg"
+                    ],
+                    "captions": [
+                        "Amazon Echo can control your home",
+                        "Grensom's Alexa smart mirror"
+                    ]
+                },
+                {
+                    "title": "The construction",
+                    "text": "Let us start with a list of what I used to build the mirror. The heart of my mirror is the Raspberry Pi 3 model B+, the newest version to this point. It offeres enough processing power to handle both the display of the Magic Mirror software and the voice control. The newer Pi version also offer an integrated Wifi and Bluetooth modem, thus no need for additional hardware. The Pi is powered by a 5V 3A charging device and the data is stored on a 16GB micro SD card. For the voice control part, I used parts I still had lying around from a former project. A 3.5mm jack microphone and (because you cannot simply use it with the 3.5mm port of the py) an old 7.1 USB soundcard, as well as a bluethooth speaker. Finally, to display everthing, I used an old computer screen which basically fished out of the trash. To cover the screen, I ordered an 30x45cm bidirectional acryl mirror on Amazon. Aryl certainly is of way lesser quality; however, it is also a lot cheaper. My total costs for new hardware: 62€.",
+                    "images": [
+                        "../assets/images/magicmirror3.jpg",
+                        "../assets/images/magicmirror4.jpg",
+                        "../assets/images/magicmirror5.jpg",
+                        "../assets/images/magicmirror6.jpg"
+                    ],
+                    "captions": [
+                        "The mirror is powered by a RaspberryPi 3 model B+",
+                        "All hardware parts (exept monitor) I used for the build.",
+                        "The pure screen and all parts connected to the pi in the back",
+                        "Paint it black.",
+                        "Cable management on the back"
+                    ]
+                },
+                {
+                    "title": "",
+                    "text": "I started by stripping away all unnecessary parts and covers of the monitor which left me only with the screen itself, and the monitor controler. Then my mother helped me to measure and build the wooden frame to hold the screen. This was by far the most challenging part, since the mirror is slightly smaller than the monitor, which means, the frame must be exactly the size of the monitor. It was tricky and result is definitely not perfect, but for now it serves the purpose. Now I attached the mirror to the screen with tape, inserted the monitor into the frame and taped the Pi with all other hardware parts on the back. The end result looks good but in the future, I want to upgrade to a glass mirror."
+                },
+                {
+                    "title": "Software",
+                    "text": "Now let me explain the software part of the project. Everything is based on the \"Google Voice Kit V1\" image for raspbian (Link below). It includes Raspbian 8 (Jessi) along with the google assistant sdk and all required drivers. After setting up the usb soundcard and microphone I was already ready to test the assistant by executing one of the preinstalled scripts. Now to the Magic Mirror software. I used the official Magic Mirror software, offering me an open source mirror overlay with optional comunity developed modules like spotify display or train departures. Everything can be configured in one config file. The project is very easy to install and looks great! I registerd the mirror and the google assistant process with pm2 in order to make them accessible during runtime and auto startable after a reboot. Alright, but what about the personalisation I talked about before. Well let us dive into the google assistant sdk for a bit. ",
+                    "images": [
+                        "../assets/images/magicmirror7.png",
+                        "../assets/images/magicmirror8.png",
+                        "../assets/images/magicmirror9.png",
+                        "../assets/images/magicmirror10.png"
+                    ],
+                    "captions": [
+                        "The google sdk data flow",
+                        "Abstract of my google assistant python script",
+                        "The Google Voice Kit V1",
+                        "The official Magic Mirror website"  
+                    ]
+                },
+                {
+                    "title": "",
+                    "text": "The Pi records voice commands which are interpreted by the local sdk. The result is then sent to the google cloud servers to process the request and come up with an answer. This voice anwer will then be created in the cloud and sent back to the pi where the speaker returns it. For custum actions one can now hijack two spots. First, the local python script on the pi. All responses come with a text and sometimes with an action type. One can listen for them and based on the response execute local commands, such as turning off the display or controlling spotify. Ok but how do I know what to listen for? This where the second customizable spot comes into play, the action.json. Here you can define request patterns and their custom responses, as well as custom action types. By adding new entries here, you can build your very own assistant. Because custom action.json files are stored on the google cloud servers for only 30 days, I registerd a simple cron job on the pi, updating the json every month."
+                    
+                },
+                {
+                    "title": "Current status",
+                    "text": "On this date, the mirror has the following features: Wheather forecast, current news (using RSS feed), train and co. depatures and the display of spotify's current song. Additionally, the assistant can handle multiple custom commands such as toogling the screen or controlling spotify using its web API. In the future I would like to upgrade the mirror with a glass mirror and add train querries, e.g. \"when is the next suburban train to XY?\""
+                }
+            ],
+            "footnotes": [
+                [
+                    "Official Magic Mirror website",
+                    "https://magicmirror.builders/"
+                ],
+                [
+                    "Google's voice kit images for the raspberry pi",
+                    "https://github.com/google/aiyprojects-raspbian/releases"
+                ],
+                [
+                    "Grensom's Alexa smart mirror build",
+                    "https://www.youtube.com/watch?v=aa3VVZA0e5Y&t=131s"
+                ]
+            ]
+        },
+        {
             "logo": "../../assets/images/angular-logo.png",
             "runtime": "06/19 - 07/19",
             "title": "Angular Website",
@@ -66,7 +147,7 @@
             "paragraphs": [
                 {
                     "title": "Starting point ",
-                    "text": "",
+                    "text": "Back in March 2018 I started with the creation of my first online portfolio. This project aimed to achieve two main goals: First, to increase my skills and knowledge in HTML, CSS and partly JavaScript. Second, to give companies, and institutions a better chance of getting to know me during, for example, an application process. However, designing all website components by oneself is a lot work, especially when there is new content coming every so often and the structure of the website changes due to the keenly experimental owner. As the portfolio grew bigger, and the structure of the project more and more chaotic, I decided it was time to look for something more advanced to manage my website. Something that 1) helps me to manage my content in a more sophisticated way, 2) offers me a range of prebuild options to design my components and 3) lets me discover a new framework / programming language. As a working student I was working a lot with the Ionic 3 framework, which is based on Angular. This looked like the perfect way to go.",
                     "images": [
                         "../assets/images/angular1.png",
                         "../assets/images/angular2.png"
@@ -78,7 +159,7 @@
                 },
                 {
                     "title": "The Creation Process",
-                    "text": "",
+                    "text": "The implementation turned out to be pretty straight forward since I already had the content and the knowledge to start right away. It took maybe one or two days to create a mirror of my old website, but that was not the end of it. The powerful Angular framework enabled me to integrate new features, such as dropdown menus, overlays, deeplinking, etc. On top of that I experimented with the styling of the site. For this I read several style guideline documentations for angular and general web development as well as studied nearly a hundred well-known websites to get a feeling for how a modern homepage should look like. The end result should be minimalistic and easily accessible, but also feature a certain flair of artistic creativity. And though there is always room for enhancements, I can say today that I am very pleased with the result!",
                     "images": [
                         "../assets/images/angular3.png",
                         "../assets/images/angular4.png",
@@ -464,7 +545,7 @@
             ]
         },
         {
-            "logo": "../../assets/images/hank_vorschau.png",
+            "logo": "../../assets/images/hank-logo.png",
             "runtime": "05/17 - 08/17",
             "title": "Hank - The Game",
             "shortDescription": "Creating a complex 2D platformer in Java",
