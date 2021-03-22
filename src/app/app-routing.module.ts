@@ -20,7 +20,7 @@ const routes: Routes = [
   exports: [RouterModule],
   providers: [
     { provide: LocationStrategy, useClass: PathLocationStrategy },
-    { provide: APP_BASE_HREF, useValue: '/' },
+    { provide: APP_BASE_HREF, useValue: '/website/' },
 ],
 })
 export class AppRoutingModule {}
